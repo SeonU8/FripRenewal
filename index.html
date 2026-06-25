@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="사용자 경험을 개선하는 웹 디자이너/퍼블리셔 임선우의 포트폴리오입니다. Frip 리뉴얼 프로젝트를 통해 UI/UX 기획부터 웹 구현까지의 전 과정을 상세히 담았습니다.">
+    <title>FRIP</title>
+    <link rel="preload" href="./fonts/SUIT-Variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/NanumSquareNeo-Variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/basicStyle.css">
+    <link rel="stylesheet" href="css/mainPage.css">
+    <script src="js/jquery-4.0.0.min.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/mainPage.js" defer></script>
+</head>
+<body>
+    <div class="skip_menu">
+        <a href="#header">주요메뉴 바로가기</a>
+        <a href="#guid">프립 가이드 바로가기</a>
+        <a href="frip_pickYours">테마별 추천 바로가기</a>
+        <a href="#frip_bestSeller">믿고 가는 베스트 바로가기</a>
+        <a href="#host_apply">호스트지원 바로가기</a>
+        <a href="#look">다양하게 즐기기 바로가기</a>
+    </div>
+
+    <div class="wrap">
+        <header id="header" class="header">
+            <div class="gnb_bg"><div class="bg_line"></div></div>
+            <div class="gnb_wrap">
+                <h1 class="logo"><a href="index.html"><img src="images/logo.svg" alt="FRIP"></a></h1>
+
+                <nav id="gnb" class="gnb">
+                    <span class="gnb_hover_pad"></span>
+                    <h2 class="hide">주요 메뉴</h2>
+                    <ul class="gnb_1depth">
+                        <li class="art"><a href="dep1_art.html">예술</a>
+                            <ul class="gnb_2depth">
+                                <li class="paint"><a href="painting.html">미술</a></li>
+                                <li class="craft"><a href="craft.html">공예</a></li>
+                                <li class="media"><a href="media.html">미디어</a></li>
+                                <li class="stage"><a href="performance.html">공연</a></li>
+                                <li class="literature"><a href="literature.html">문학</a></li>
+                            </ul>
+                        </li>
+                        <li class="sport"><a href="dep1_sports.html">스포츠</a>
+                            <ul class="gnb_2depth">
+                                <li class="fitness"><a href="fitness.html">피트니스</a></li>
+                                <li class="ball"><a href="ball.html">구기</a></li>
+                                <li class="combat"><a href="cambat.html">격투</a></li>
+                                <li class="outdoor"><a href="outdoor.html">아웃도어</a></li>
+                                <li class="water"><a href="water.html">수상</a></li>
+                            </ul>
+                        </li>
+                        <li class="food"><a href="dep1_food.html">음식</a>
+                            <ul class="gnb_2depth">
+                                <li class="cook"><a href="cooking.html">요리</a></li>
+                                <li class="baking"><a href="baking.html">베이킹</a></li>
+                                <li class="cafe"><a href="drink.html">음료</a></li>
+                                <li class="gourmet"><a href="gourmet.html">미식</a></li>
+                            </ul>
+                        </li>
+                        <li class="selfdev"><a href="dep1_growth.html">자기계발</a>
+                            <ul class="gnb_2depth">
+                                <li class="mind"><a href="mind.html">마인드</a></li>
+                                <li class="learn"><a href="learning.html">학습</a></li>
+                                <li class="career"><a href="career.html">커리어</a></li>
+                                <li class="comm"><a href="comm.html">커뮤니케이션</a></li>
+                                <li class="beauty"><a href="beauty.html">뷰티</a></li>
+                            </ul>
+                        </li>
+                        <li class="meet"><a href="dep1_social.html">모임</a>
+                            <ul class="gnb_2depth">
+                                <li class="club"><a href="meeting.html">만남</a></li>
+                                <li class="taste"><a href="culture.html">문화예술</a></li>
+                                <li class="study"><a href="study.html">스터디</a></li>
+                            </ul>
+                        </li>
+                        <li class="online"><a href="dep1_online.html">온라인</a>
+                            <ul class="gnb_2depth">
+                                <li class="live"><a href="online.html">라이브</a></li>
+                                <li class="class"><a href="class.html">클래스</a></li>
+                                <li class="challenge"><a href="challenge.html">챌린지</a></li>
+                            </ul>
+                        </li>
+                        <li class="trip"><a href="dep1_travel.html">여행</a>
+                            <ul class="gnb_2depth">
+                                <li class="local"><a href="korea.html">국내여행</a></li>
+                                <li class="global"><a href="jeju.html">제주여행</a></li>
+                                <li class="global"><a href="adroad.html">해외여행</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="top_menu">
+                    <div class="host">
+                        <h2 class="hide">사용자 메뉴</h2>
+                        <a href="host.html">호스트 지원</a>
+                    </div>
+
+                    <div class="util">
+                        <h2 class="hide">유틸메뉴</h2>
+                        <ul>
+                            <li class="like"><a href="like.html"><img src="images/like.svg" alt="찜"></a></li>
+                            <li class="notice"><a href="notice.html"><img src="images/notice.svg" alt="공지사항"></a></li>
+                            <li class="my">
+                                <a href="#" class="mypage-btn">
+                                    <img src="images/my.svg" alt="My">
+                                    <span class="user_name"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main id="main" class="main">
+            <div class="search_bg">
+                <div class="search">
+                    <p>당신의 취향이 경험이 되는 순간</p>
+                    <form name="searchForm" action="#" method="GET">
+                        <fieldset>
+                            <legend class="hide">검색</legend>
+                            <label for="search_text" class="hide">입력</label>
+                            <input type="text" name="search_text" id="search_text" placeholder="검색어를 입력하세요.">
+                            <button type="button" aria-label="검색" class="search_button">검색</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        
+            <section class="guid" id="guid">
+                <h2 class="hide">프립 가이드</h2>
+                <div class="main_slider">
+                    <div class="main_slList_view">
+                        <ul class="main_slList">
+                            <li style="background-image: url(images/bucketFrip.jpg);">
+                                <a href="#none">
+                                    <img src="images/bucketFrip_t.jpg" alt="버킷프립 수만개의 경험 중 단 하나, 프립이 큐레이션한 버킷리스트">
+                                </a>
+                            </li>
+                            <li style="background-image: url('images/fripBus.jpg');">
+                                <a href="#none">
+                                    <img src="images/fripBus_t.jpg" alt="프립버스 준비물은 설렘뿐 나머지는 프립이 다 할게">
+                                </a>
+                            </li>
+                            <li style="background-image: url(images/bucketFrip.jpg);">
+                                <a href="#none">
+                                    <img src="images/bucketFrip_t.jpg" alt="버킷프립 수만개의 경험 중 단 하나, 프립이 큐레이션한 버킷리스트">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button type="button" aria-label="이전" class="btn_prev"></button>
+                    <button type="button" aria-label="다음" class="btn_next"></button>
+                </div>
+            </section>
+
+            <section class="pickYours" id="frip_pickYours">
+                <h2 class="hide">테마별 추천</h2>
+                <ul>
+                    <li class="main_pickList">
+                        <a href="around_me.html">
+                            <figure class="main_pickGif">
+                                <img src="images/main_map.jpg" data-static="images/main_map.jpg" data-gif="images/main_map.gif" class="hover_gif" alt="">
+                            </figure>
+                            <h3 class="main_pickTitle">내 주변 프립</h3>
+                        </a>
+                    </li>
+                    <li class="main_pickList">
+                        <a href="#none">
+                            <figure class="main_pickGif">
+                                <img src="images/main_friend.jpg" data-static="images/main_friend.jpg" data-gif="images/main_friend.gif" class="hover_gif" alt="">
+                            </figure>
+                            <h3 class="main_pickTitle">이번 주말 친구와</h3>
+                        </a>
+                    </li>
+                    <li class="main_pickList">
+                        <a href="#none">
+                            <figure class="main_pickGif">
+                                <img src="images/main_leavework.jpg" data-static="images/main_leavework.jpg" data-gif="images/main_leavework.gif" class="hover_gif" alt="">
+                            </figure>
+                            <h3 class="main_pickTitle">퇴근 후 바로</h3>
+                        </a>
+                    </li>
+                    <li class="main_pickList">
+                        <a href="#none">
+                            <figure class="main_pickGif">
+                                <img src="images/main_cheap.jpg" data-static="images/main_cheap.jpg" data-gif="images/main_cheap.gif" class="hover_gif" alt="">
+                            </figure>
+                            <h3 class="main_pickTitle">가성비 체험</h3>
+                        </a>
+                    </li>
+                    <li class="main_pickList">
+                        <a href="#none">
+                            <figure class="main_pickGif">
+                                <img src="images/main_alone.jpg" data-static="images/main_alone.jpg" data-gif="images/main_alone.gif" class="hover_gif" alt="">
+                            </figure>
+                            <h3 class="main_pickTitle">나만의 시간</h3>
+                        </a>
+                    </li>
+                    <li class="main_pickList">
+                        <a href="#none">
+                            <figure class="main_pickGif">
+                                <img src="images/main_new.jpg" data-static="images/main_new.jpg" data-gif="images/main_new.gif" class="hover_gif" alt="">
+                            </figure>
+                            <h3 class="main_pickTitle">새로운 취미 발견</h3>
+                        </a>
+                    </li>
+                    <li class="main_pickList">
+                        <a href="#none">
+                            <figure class="main_pickGif">
+                                <img src="images/main_dog.jpg" data-static="images/main_dog.jpg" data-gif="images/main_dog.gif" class="hover_gif" alt="">
+                            </figure>
+                            <h3 class="main_pickTitle">댕댕이랑 같이</h3>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <div class="frip_recommend" id="frip_bestSeller">
+                <h2 class="hide">믿고 가는 베스트 프립</h2>
+                <section class="popular">
+                    <h3 class="pop_title">인기 급상승 프립</h3>
+                    <div class="pop_view">
+                        <div class="pop_cont">
+                            <div class="fripbus_wrap">
+                                <div class="block">
+                                    <a href="#none">
+                                        <dl>
+                                            <div class="pop_text">
+                                                <dt>
+                                                    <div class="img_container"><img src="images/pop_1.jpg" alt=""></div>
+                                                    <strong class="pop_subtitle">숙소·렌트·관광지 한 번에, 강릉갈래?</strong>
+                                                </dt>
+                                                <dd class="price">
+                                                    <span class="before_price sub_t">180,000원</span>
+                                                    <span class="hide">에서</span>
+                                                    <span class="sale">56%</span>
+                                                    <span class="hide">할인</span>
+                                                    <span class="after_price">79,000원</span>
+                                                </dd>
+                                                <dd class="locate sub_t">강원 전체</dd>
+                                                <dd class="review">
+                                                    <div class="star_wrap">
+                                                        <span class="star_bg">
+                                                            <span class="star_fill" style="width: 100%"></span>
+                                                        </span>
+                                                    </div>
+                                                    <span class="hide">별점</span>
+                                                    <span class="star_score sub_t">5.0</span>
+                                                    <span class="hide">점</span>
+                                                    <span class="hide">후기</span>
+                                                    <span class="review_number sub_t">6</span>
+                                                    <span class="hide">개</span>
+                                                </dd>
+                                            </div>
+                                        </dl>
+                                    </a>
+                                    <button type="button" class="btn_wish" aria-label="찜하기">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                            <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                        </svg>
+                                        <span class="hide">찜하기</span>
+                                    </button>
+                                    <span class="tag_fripbus">프립버스</span>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <a href="#none">
+                                    <dl>
+                                        <div class="pop_text">
+                                            <dt>
+                                                <div class="img_container"><img src="images/pop_2.jpg" alt=""></div>
+                                                <strong class="pop_subtitle">[혼자여행성지] 국내최초 1박2일 오리지널 혼펜_따로 또 같이</strong>
+                                            </dt>
+                                            <dd class="price">
+                                                <span class="after_price">159,000원</span>
+                                            </dd>
+                                            <dd class="locate sub_t">경기 전체</dd>
+                                            <dd class="review">
+                                                <div class="star_wrap">
+                                                    <span class="star_bg">
+                                                        <span class="star_fill" style="width: 98%"></span>
+                                                    </span>
+                                                </div>
+                                                <span class="hide">별점</span>
+                                                <span class="review_text sub_t">4.9</span>
+                                                <span class="hide">점</span>
+                                                <span class="hide">후기</span>
+                                                <span class="review_number sub_t">1,254</span>
+                                                <span class="hide">개</span>
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </a>
+                                <button type="button" class="btn_wish" aria-label="찜하기">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                        <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                    </svg>
+                                    <span class="hide">찜하기</span>
+                                </button>
+                            </div>
+                            <div class="block">
+                                <a href="#none">
+                                    <dl>
+                                        <div class="pop_text">
+                                            <dt>
+                                                <div class="img_container"><img src="images/pop_3.jpg" alt=""></div>
+                                                <strong class="pop_subtitle">샐러드 팩토리 - 내가 먹을 일주일 치 샐러드 만들기</strong>
+                                            </dt>
+                                            <dd class="price">
+                                                <span class="before_price sub_t">40,000원</span>
+                                                <span class="hide">에서</span>
+                                                <span class="sale">16%</span>
+                                                <span class="hide">할인</span>
+                                                <span class="after_price">25,800원</span>
+                                            </dd>
+                                            <dd class="locate sub_t">종로<span class="line"></span>중구</dd>
+                                            <dd class="review">
+                                                <div class="star_wrap">
+                                                    <span class="star_bg">
+                                                        <span class="star_fill" style="width: 100%"></span>
+                                                    </span>
+                                                </div>
+                                                <span class="hide">별점</span>
+                                                <span class="review_text sub_t">5.0</span>
+                                                <span class="hide">점</span>
+                                                <span class="hide">후기</span>
+                                                <span class="review_number sub_t">20</span>
+                                                <span class="hide">개</span>
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </a>
+                                <button type="button" class="btn_wish" aria-label="찜하기">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                        <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                    </svg>
+                                    <span class="hide">찜하기</span>
+                                </button>
+                            </div>
+                            <div class="block">
+                                <a href="#none">
+                                    <dl>
+                                        <div class="pop_text">
+                                            <dt>
+                                                <div class="img_container"><img src="images/pop_4.jpg" alt=""></div>
+                                                <strong class="pop_subtitle">[방과 후 미술] 정쌤의 펜드로잉 그룹수업</strong>
+                                            </dt>
+                                            <dd class="price">
+                                                <span class="after_price">35,000원</span>
+                                            </dd>
+                                            <dd class="locate sub_t">송파<span class="line"></span>강동</dd>
+                                            <dd class="review">
+                                                <div class="star_wrap">
+                                                    <span class="star_bg">
+                                                        <span class="star_fill" style="width: 100%"></span>
+                                                    </span>
+                                                </div>
+                                                <span class="hide">별점</span>
+                                                <span class="review_text sub_t">5.0</span>
+                                                <span class="hide">점</span>
+                                                <span class="hide">후기</span>
+                                                <span class="review_number sub_t">26</span>
+                                                <span class="hide">개</span>
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </a>
+                                <button type="button" class="btn_wish" aria-label="찜하기">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                        <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                    </svg>
+                                    <span class="hide">찜하기</span>
+                                </button>
+                            </div>
+                            <div class="new_wrap">
+                                <div class="block">
+                                    <a href="#none">
+                                        <dl>
+                                            <div class="pop_text">
+                                                <dt>
+                                                    <div class="img_container"><img src="images/pop_5.jpg" alt=""></div>
+                                                    <strong class="pop_subtitle">강릉갈래 테마형 아트&로컬</strong>
+                                                </dt>
+                                                <dd class="price">
+                                                    <span class="before_price sub_t">223,500원</span>
+                                                    <span class="hide">에서</span>
+                                                    <span class="sale">27%</span>
+                                                    <span class="hide">할인</span>
+                                                    <span class="after_price">163,000원</span>
+                                                </dd>
+                                                <dd class="locate sub_t">강원 전체</dd>
+                                            </div>
+                                        </dl>
+                                    </a>
+                                    <button type="button" class="btn_wish" aria-label="찜하기">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                            <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                        </svg>
+                                        <span class="hide">찜하기</span>
+                                    </button>
+                                    <span class="tag_new">신규</span>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <a href="#none">
+                                    <dl>
+                                        <div class="pop_text">
+                                            <dt>
+                                                <div class="img_container"><img src="images/pop_6.jpg" alt=""></div>
+                                                <strong class="pop_subtitle">[드로잉살롱]🍻🎨🎹취향으로 만나는 친구_캐주얼모임</strong>
+                                            </dt>
+                                            <dd class="price">
+                                                <span class="before_price sub_t"></span>
+                                                <span class="hide"></span>
+                                                <span class="sale"></span>
+                                                <span class="hide"></span>
+                                                <span class="after_price">39,000원</span>
+                                            </dd>
+                                            <dd class="locate sub_t">송파<span class="line"></span>강동</dd>
+                                            <dd class="review">
+                                                <div class="star_wrap">
+                                                    <span class="star_bg">
+                                                        <span class="star_fill" style="width: 100%"></span>
+                                                    </span>
+                                                </div>
+                                                <span class="hide">별점</span>
+                                                <span class="review_text sub_t">5.0</span>
+                                                <span class="hide">점</span>
+                                                <span class="hide">후기</span>
+                                                <span class="review_number sub_t">949</span>
+                                                <span class="hide">개</span>
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </a>
+                                <button type="button" class="btn_wish" aria-label="찜하기">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                        <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                    </svg>
+                                    <span class="hide">찜하기</span>
+                                </button>
+                            </div>
+                            <div class="block">
+                                <a href="#none">
+                                    <dl>
+                                        <div class="pop_text">
+                                            <dt>
+                                                <div class="img_container"><img src="images/pop_7.jpg" alt=""></div>
+                                                <strong class="pop_subtitle">내가 원하는 꽃으로 디자인하는 나만의 플라워클래스</strong>
+                                            </dt>
+                                            <dd class="price">
+                                                <span class="before_price sub_t">59,000원</span>
+                                                <span class="hide">에서</span>
+                                                <span class="sale">34%</span>
+                                                <span class="hide">할인</span>
+                                                <span class="after_price">39,000원</span>
+                                            </dd>
+                                            <dd class="locate sub_t">강남<span class="line"></span>서초</dd>
+                                            <dd class="review">
+                                                <div class="star_wrap">
+                                                    <span class="star_bg">
+                                                        <span class="star_fill" style="width: 98%"></span>
+                                                    </span>
+                                                </div>
+                                                <span class="hide">별점</span>
+                                                <span class="review_text sub_t">4.9</span>
+                                                <span class="hide">점</span>
+                                                <span class="hide">후기</span>
+                                                <span class="review_number sub_t">398</span>
+                                                <span class="hide">개</span>
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </a>
+                                <button type="button" class="btn_wish" aria-label="찜하기">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                        <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                    </svg>
+                                    <span class="hide">찜하기</span>
+                                </button>
+                            </div>
+                            <div class="block">
+                                <a href="#none">
+                                    <dl>
+                                        <div class="pop_text">
+                                            <dt>
+                                                <div class="img_container"><img src="images/pop_8.jpg" alt=""></div>
+                                                <strong class="pop_subtitle">퍼스널 컬러/메이크업으로 &lt;퍼스널 브랜딩&gt; #나를 찾는 시간</strong>
+                                            </dt>
+                                            <dd class="price">
+                                                <span class="before_price sub_t"></span>
+                                                <span class="hide"></span>
+                                                <span class="sale"></span>
+                                                <span class="hide"></span>
+                                                <span class="after_price">120,000원</span>
+                                            </dd>
+                                            <dd class="locate sub_t">성남<span class="line"></span>분당</dd>
+                                            <dd class="review">
+                                                <div class="star_wrap">
+                                                    <span class="star_bg">
+                                                        <span class="star_fill" style="width: 98%"></span>
+                                                    </span>
+                                                </div>
+                                                <span class="hide">별점</span>
+                                                <span class="review_text sub_t">4.9</span>
+                                                <span class="hide">점</span>
+                                                <span class="hide">후기</span>
+                                                <span class="review_number sub_t">525</span>
+                                                <span class="hide">개</span>
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </a>
+                                <button type="button" class="btn_wish" aria-label="찜하기">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                        <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                    </svg>
+                                    <span class="hide">찜하기</span>
+                                </button>
+                            </div>
+                            <div class="block">
+                                <a href="#none">
+                                    <dl>
+                                        <div class="pop_text">
+                                            <dt>
+                                                <div class="img_container"><img src="images/pop_9.jpg" alt=""></div>
+                                                <strong class="pop_subtitle">[망원] 생레몬이 듬뿍 정통레몬위크엔드(레몬케이크)</strong>
+                                            </dt>
+                                            <dd class="price">
+                                                <span class="before_price sub_t"></span>
+                                                <span class="hide"></span>
+                                                <span class="sale"></span>
+                                                <span class="hide"></span>
+                                                <span class="after_price">30,000원</span>
+                                            </dd>
+                                            <dd class="locate sub_t">마포<span class="line"></span>서대문<span class="line"></span>은평</dd>
+                                            <dd class="review">
+                                                <div class="star_wrap">
+                                                    <span class="star_bg">
+                                                        <span class="star_fill" style="width: 100%"></span>
+                                                    </span>
+                                                </div>
+                                                <span class="hide">별점</span>
+                                                <span class="review_text sub_t">5.0</span>
+                                                <span class="hide">점</span>
+                                                <span class="hide">후기</span>
+                                                <span class="review_number sub_t">114</span>
+                                                <span class="hide">개</span>
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </a>
+                                <button type="button" class="btn_wish" aria-label="찜하기">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                        <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                    </svg>
+                                    <span class="hide">찜하기</span>
+                                </button>
+                            </div>
+                            <div class="block">
+                                <a href="#none">
+                                    <dl>
+                                        <div class="pop_text">
+                                            <dt>
+                                                <div class="img_container"><img src="images/pop_10.jpg" alt=""></div>
+                                                <strong class="pop_subtitle">[서울] 1인당 3개를 물레로 도자기 만들기</strong>
+                                            </dt>
+                                            <dd class="price">
+                                                <span class="before_price sub_t">55,000원</span>
+                                                <span class="hide">에서</span>
+                                                <span class="sale">9%</span>
+                                                <span class="hide">할인</span>
+                                                <span class="after_price">50,000원</span>
+                                            </dd>
+                                            <dd class="locate sub_t">동대문<span class="line"></span>성북</dd>
+                                            <dd class="review">
+                                                <div class="star_wrap">
+                                                    <span class="star_bg">
+                                                        <span class="star_fill" style="width: 100%"></span>
+                                                    </span>
+                                                </div>
+                                                <span class="hide">별점</span>
+                                                <span class="review_text sub_t">5.0</span>
+                                                <span class="hide">점</span>
+                                                <span class="hide">후기</span>
+                                                <span class="review_number sub_t">120</span>
+                                                <span class="hide">개</span>
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </a>
+                                <button type="button" class="btn_wish" aria-label="찜하기">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                        <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                    </svg>
+                                    <span class="hide">찜하기</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pop_slider">
+                        <div class="slider_control">
+                            <div class="pop_page">
+                                <span class="pop_current">1</span>
+                                <span class="pop_total">7</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress_fill"></div>
+                            </div>
+                        </div>
+                        <div class="pop_buttons">
+                            <button type="button"  aria-label="이전" class="pre_more"><span class="hide">이전</span></button>
+                            <button type="button"  aria-label="다음" class="next_more"><span class="hide">이전</span></button>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="new">
+                    <h3 class="new_title">신규 프립</h3>
+                    <div class="new_cont">
+                        <div class="new_wrap">
+                            <div class="block">
+                                <a href="#none">
+                                    <dl>
+                                        <div class="new_text">
+                                            <dt>
+                                                <div class="img_container"><img src="images/new_1.jpg" alt=""></div>
+                                                <strong class="new_subtitle">[1대1 소개팅] 13년 노하루 달데이 공기업 대기업 공무원 일대일 프리미엄</strong>
+                                            </dt>
+                                            <dd class="price">
+                                                <span class="before_price sub_t">110,000원</span>
+                                                <span class="hide">에서</span>
+                                                <span class="sale">55%</span>
+                                                <span class="hide">할인</span>
+                                                <span class="after_price">50,000원</span>
+                                            </dd>
+                                            <dd class="locate sub_t">온라인</dd>
+                                        </div>
+                                    </dl>
+                                </a>
+                                <button type="button" class="btn_wish" aria-label="찜하기">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                        <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                    </svg>
+                                    <span class="hide">찜하기</span>
+                                </button>
+                                <span class="tag_new">신규</span>
+                            </div>
+                        </div>
+                        <div class="new_wrap">
+                            <div class="block">
+                                <a href="#none">
+                                    <dl>
+                                        <div class="new_text">
+                                            <dt>
+                                                <div class="img_container"><img src="images/new_2.jpg" alt=""></div>
+                                                <strong class="new_subtitle">[서울] 쉽고 재미있는 위스키 원데이 클래스! 초보자 가능! (4종 시음)</strong>
+                                            </dt>
+                                            <dd class="price">
+                                                <span class="before_price sub_t">60,000원</span>
+                                                <span class="hide">에서</span>
+                                                <span class="sale">18%</span>
+                                                <span class="hide">할인</span>
+                                                <span class="after_price">49,000원</span>
+                                            </dd>
+                                            <dd class="locate sub_t">송파<span class="line"></span>강동</dd>
+                                        </div>
+                                    </dl>
+                                </a>
+                                <button type="button" class="btn_wish" aria-label="찜하기">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                        <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                    </svg>
+                                    <span class="hide">찜하기</span>
+                                </button>
+                                <span class="tag_new">신규</span>
+                            </div>
+                        </div>
+                        <div class="new_wrap">
+                            <div class="block">
+                                <a href="#none">
+                                    <dl>
+                                        <div class="new_text">
+                                            <dt>
+                                                <div class="img_container"><img src="images/new_3.jpg" alt=""></div>
+                                                <strong class="new_subtitle">[일산] 프리다이빙 1+1 이벤트! 원데이 클래스 AIDA, PADI</strong>
+                                            </dt>
+                                            <dd class="price">
+                                                <span class="before_price sub_t">260,000원</span>
+                                                <span class="hide">에서</span>
+                                                <span class="sale">50%</span>
+                                                <span class="hide">할인</span>
+                                                <span class="after_price">130,000원</span>
+                                            </dd>
+                                            <dd class="locate sub_t">고양<span class="line"></span>김포</dd>
+                                        </div>
+                                    </dl>
+                                </a>
+                                <button type="button" class="btn_wish" aria-label="찜하기">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                        <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                    </svg>
+                                    <span class="hide">찜하기</span>
+                                </button>
+                                <span class="tag_new">신규</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#none" class="more">더보기 &nbsp;&gt;</a>
+                </section>
+
+                <section class="now">
+                    <h3 class="now_title">지금 가능한 프립</h3>
+                    <div class="now_cont block">
+                        <div class="now_list">
+                            <dl>
+                                <div class="now_text">
+                                    <dt>
+                                        <img src="images/now_1.jpg" alt="">
+                                        <strong class="now_subtitle">[강남/신논현] 작은얼굴 V라인, 종아리 관리 #플로라</strong>
+                                        <button type="button" aria-label="찜하기" class="btn_wish">
+                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                                <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                            </svg>
+                                            <span class="hide">찜하기</span>
+                                        </button>
+                                    </dt>
+                                    <dd class="price">
+                                        <span class="sale">53%</span>
+                                        <span class="hide">할인</span>
+                                        <span class="after_price">47,000원</span>
+                                    </dd>
+                                    <dd class="locate sub_t">강남<span class="line"></span>서초</dd>
+                                </div>
+                            </dl>
+                            <a href="#none" class="button">참여하기</a>
+                        </div>
+
+                        <div class="now_list">
+                            <dl>
+                                <div class="now_text">
+                                    <dt>
+                                        <img src="images/now_2.jpg" alt="">
+                                        <strong class="now_subtitle">[양양] 서프오션 서핑 강습&렌탈권 #양양 #핫플 (예약가능)</strong>
+                                        <button type="button" aria-label="찜하기" class="btn_wish">
+                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                                <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                            </svg>
+                                            <span class="hide">찜하기</span>
+                                        </button>
+                                    </dt>
+                                    <dd class="price">
+                                        <span class="sale">22%</span>
+                                        <span class="hide">할인</span>
+                                        <span class="after_price">35,000원</span>
+                                    </dd>
+                                    <dd class="locate sub_t">강원 전체</dd>
+                                </div>
+                            </dl>
+                            <a href="#none" class="button">참여하기</a>
+                        </div>
+
+                        <div class="now_list">
+                            <dl>
+                                <div class="now_text">
+                                    <dt>
+                                        <div class="new_wrap">
+                                            <img src="images/now_3.jpg" alt="">
+                                            <span class="tag_new">신규</span>
+                                        </div>
+                                        <strong class="now_subtitle">[스트릿 댄스, 방송 댄스, 코레오] 천천히 배워보기</strong>
+                                        <button type="button"  aria-label="찜하기" class="btn_wish">
+                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                                <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                            </svg>
+                                            <span class="hide">찜하기</span>
+                                        </button>
+                                    </dt>
+                                    <dd class="price">
+                                        <span class="after_price">35,000원</span>
+                                        </dd>
+                                    <dd class="locate sub_t">마포<span class="line"></span>서대문<span class="line"></span>은평</dd>
+                                </div>
+                            </dl>
+                            <a href="#none" class="button">참여하기</a>
+                        </div>
+
+                        <div class="now_list">
+                            <dl>
+                                <div class="now_text">
+                                    <dt>
+                                        <img src="images/now_4.jpg" alt="">
+                                        <strong class="now_subtitle">자세교정 요가클리닉 센스요가 22주년 체험권 90분 프로그램</strong>
+                                        <button type="button" aria-label="찜하기" class="btn_wish">
+                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                                <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                            </svg>
+                                            <span class="hide">찜하기</span>
+                                        </button>
+                                    </dt>
+                                    <dd class="price">
+                                        <span class="after_price">44,000원</span>
+                                    </dd>
+                                    <dd class="locate sub_t">강남<span class="line"></span>서초</dd>
+                                </div>
+                            </dl>
+                            <a href="#none" class="button">참여하기</a>
+                        </div>
+                    </div>
+
+                    <a href="#none" class="more">더보기 &nbsp;&gt;</a>
+                </section>
+                
+                <section class="begin">
+                    <h3 class="beg_title">입문자 추천 프립</h3>
+
+                    <div class="beg_cont">
+                        <div class="beg_wrap">
+                            <div class="block">
+                                <a href="#none">
+                                    <dl>
+                                        <div class="beg_text">
+                                            <dt>
+                                                <div class="img_container radius_all"><img src="images/beg_1.jpg" alt=""></div>
+                                                <strong class="beg_subtitle">촬영부터 보정까지, 스마트폰 사진 마스터 클래스</strong>
+                                            </dt>
+                                            <dd class="price">
+                                                <span class="after_price">25,000원</span>
+                                            </dd>
+                                            <dd class="locate sub_t">종로<span class="line"></span>중구</dd>
+                                            <dd class="review">
+                                                <div class="star_wrap">
+                                                    <span class="star_bg">
+                                                        <span class="star_fill" style="width: 98%"></span>
+                                                    </span>
+                                                </div>
+                                                <span class="hide">별점</span>
+                                                <span class="review_text sub_t">4.9</span>
+                                                <span class="hide">점</span>
+                                                <span class="hide">후기</span>
+                                                <span class="review_number sub_t">650</span>
+                                                <span class="hide">개</span>
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </a>
+                                <button type="button" class="btn_wish" aria-label="찜하기">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                        <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                    </svg>
+                                    <span class="hide">찜하기</span>
+                                </button>
+                                <span class="tag_beg">입문</span>
+                            </div>
+                        </div>
+                        <div class="beg_wrap">
+                            <div class="block">
+                                <a href="#none">
+                                    <dl>
+                                        <div class="beg_text">
+                                            <dt>
+                                                <div class="img_container radius_all"><img src="images/beg_2.jpg" alt=""></div>
+                                                <strong class="beg_subtitle">통기타 입문 원데이클래스</strong>
+                                            </dt>
+                                            <dd class="price">
+                                                <span class="before_price sub_t">35,000원</span>
+                                                <span class="hide">에서</span>
+                                                <span class="sale">14%</span>
+                                                <span class="hide">할인</span>
+                                                <span class="after_price">30,000원</span>
+                                            </dd>
+                                            <dd class="locate sub_t">영등포<span class="line"></span>구로</dd>
+                                            <dd class="review">
+                                                <div class="star_wrap">
+                                                    <span class="star_bg">
+                                                        <span class="star_fill" style="width: 96%"></span>
+                                                    </span>
+                                                </div>
+                                                <span class="hide">별점</span>
+                                                <span class="review_text sub_t">4.8</span>
+                                                <span class="hide">점</span>
+                                                <span class="hide">후기</span>
+                                                <span class="review_number sub_t">169</span>
+                                                <span class="hide">개</span>
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </a>
+                                <button type="button" class="btn_wish" aria-label="찜하기">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                        <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                    </svg>
+                                    <span class="hide">찜하기</span>
+                                </button>
+                                <span class="tag_beg">입문</span>
+                            </div>
+                        </div>
+                        <div class="beg_wrap">
+                            <div class="block">
+                                <a href="#none">
+                                    <dl>
+                                        <div class="beg_text">
+                                            <dt>
+                                                <div class="img_container radius_all"><img src="images/beg_3.jpg" alt=""></div>
+                                                <strong class="beg_subtitle">커피의 깊이를 더하는 베이직 커피 클래스 #기초 #핸드드립 #원데이</strong>
+                                            </dt>
+                                            <dd class="price">
+                                                <span class="after_price">35,000원</span>
+                                            </dd>
+                                            <dd class="locate sub_t">송파<span class="line"></span>강동</dd>
+                                            <dd class="review">
+                                                <div class="star_wrap">
+                                                    <span class="star_bg">
+                                                        <span class="star_fill" style="width: 100%"></span>
+                                                    </span>
+                                                </div>
+                                                <span class="hide">별점</span>
+                                                <span class="review_text sub_t">5.0</span>
+                                                <span class="hide">점</span>
+                                                <span class="hide">후기</span>
+                                                <span class="review_number sub_t">183</span>
+                                                <span class="hide">개</span>
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </a>
+                                <button type="button" class="btn_wish" aria-label="찜하기">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                        <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                    </svg>
+                                    <span class="hide">찜하기</span>
+                                </button>
+                                <span class="tag_beg">입문</span>
+                            </div>
+                        </div>
+                        <div class="beg_wrap">
+                            <div class="block">
+                                <a href="#none">
+                                    <dl>
+                                        <div class="beg_text">
+                                            <dt>
+                                                <div class="img_container radius_all"><img src="images/beg_4.jpg" alt=""></div>
+                                                <strong class="beg_subtitle">[오픈 할인] 왕초보를 위한 살사댄스 클래스</strong>
+                                            </dt>
+                                            <dd class="price">
+                                                <span class="before_price sub_t">80,000원</span>
+                                                <span class="hide">에서</span>
+                                                <span class="sale">75%</span>
+                                                <span class="hide">할인</span>
+                                                <span class="after_price">20,000원</span>
+                                            </dd>
+                                            <dd class="locate sub_t">강남<span class="line"></span>서초</dd>
+                                            <dd class="review">
+                                                <div class="star_wrap">
+                                                    <span class="star_bg">
+                                                        <span class="star_fill" style="width: 100%"></span>
+                                                    </span>
+                                                </div>
+                                                <span class="hide">별점</span>
+                                                <span class="review_text sub_t">5.0</span>
+                                                <span class="hide">점</span>
+                                                <span class="hide">후기</span>
+                                                <span class="review_number sub_t">34</span>
+                                                <span class="hide">개</span>
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </a>
+                                <button type="button" class="btn_wish" aria-label="찜하기">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                        <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                    </svg>
+                                    <span class="hide">찜하기</span>
+                                </button>
+                                <span class="tag_beg">입문</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#none" class="more">더보기 &nbsp;&gt;</a>
+                </section>
+            </div>
+
+            <div class="apply" id="host_apply">
+                <a href="host.html" class="main_banner">
+                    <span class="hide">호스트 지원하기</span>
+                </a>
+            </div>
+
+            <section class="look" id="look">
+                <h2 class="look_title">프립 콘텐츠 살펴보기</h2>
+                <p>취향을 따라 테마를 탐색하고, 새로운 경험의 시작을 만나보세요!</p>
+                
+                <div class="look_cont">
+                    <div class="look_exib block">
+                        <dl>
+                            <div class="look_text">
+                                <dt>
+                                    <div class="img_container"><img src="images/exib.jpg" alt=""></div>
+                                    <strong class="look_subtitle">기획전</strong>
+                                </dt>
+                                <dd>이달의 호스트와 특별 이벤트를 한눈에</dd>
+                            </div>
+                        </dl>
+                        <a href="#none" class="button">보러가기</a>
+                    </div>
+
+                    <div class="look_mag block">
+                        <dl>
+                            <div class="look_text">
+                                <dt>
+                                    <div class="img_container"><img src="images/mag.jpg" alt=""></div>
+                                    <strong class="look_subtitle">매거진</strong>
+                                </dt>
+                                <dd>여행 정보와 액티비티 이야기들</dd>
+                            </div>
+                        </dl>
+                        <a href="#none" class="button">둘러보기</a>
+                    </div>
+
+                    <div class="look_feed block">
+                        <dl>
+                            <div class="look_text">
+                                <dt>
+                                    <div class="img_container"><img src="images/feed.jpg" alt=""></div>
+                                    <strong class="look_subtitle">피드</strong>
+                                </dt>
+                                <dd>사용자의 다양한 후기와 호스트 소식</dd>
+                            </div>
+                        </dl>
+                        <a href="#none" class="button">읽어보기</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="footer_wrap">
+            <footer id="footer" class="footer">
+                <h2 class="f_logo">Frientrip</h2> <!--(주) 프렌트립 하단로고-->
+                <h3 class="hide">고객 지원</h3>
+                <div class="supt">
+                    <a href="#none" class="a_click">QnA</a>
+                    <a href="#none" class="a_click">호스트 지원</a>
+                </div>    
+                <h3 class="hide">카카오톡 상담</h3>
+                <div class="kakao">
+                    <div class="kakao_chat">
+                        <a href="#none" class="c_chat"><img src="images/chat_icon.svg" alt="">고객 채팅상담</a>
+                        <a href="#none" class="h_chat"><img src="images/chat_icon.svg" alt="">호스트지원 채팅상담</a>
+                    </div>
+                    <p>운영시간<span class="line"></span>평일 주말 10:00~17:00 (점심 12:00~13:00)</p>
+                </div>
+
+                <div class="f_txt">
+                    <div class="f_txt1">
+                        <p><span class="review_number">주</span>프렌트립<span class="line"></span>대표 임수열<span class="line"></span>개인정보관리책임자 양사열<span class="line"></span>사업자등록번호 261-81-04385<span class="line"></span>통신판매업신고번호 2016-서울성동-01088</p>
+                        <p>주소 서울특별시 성동구 왕십리로 115 헤이그라운드 서울숲점 G704<span class="line"></span>광고 제휴문의 contact@frientrip.com</p>
+                    </div>
+                    <div class="f_txt2">
+                        <p><a href="#none" class="a_click">이용약관</a><span class="line"></span><a href="#none" class="a_click">개인정보 처리방침</a><span class="line"></span><a href="#none" class="a_click">NICEPAY 안전거래 서비스</a></p>
+                        <p><span class="review_number">주</span>프렌트립은 통신판매 중개자로서 거래 당사자가 아니며, 호스트가 등록한 상품정보 및 거래에 대해 <span class="review_number">주</span>프렌트립은 일체의 책임을 지지 않습니다.</p>
+                    </div>
+                </div>
+
+                <h3 class="hide">프립 연결링크</h3>
+                <div class="f_link">
+                    <a href="https://www.instagram.com/frip_korea" class="instagram"><img src="images/instagram.svg" alt="인스타그램"></a>
+                    <a href="https://www.facebook.com/frientrip" class="facebook"><img src="images/facebook.svg" alt="페이스북"></a>
+                    <a href="https://www.youtube.com/channel/UCgYVh2nh8nfC0wHEdkWLLZg?view_as=subscriber" class="youtube"><img src="images/youtube.svg" alt="유튜브"></a>
+                    <span class="f_line"></span>
+                    <a href="https://apps.apple.com/kr/app/%ED%94%84%EB%A6%BD-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-1%EB%93%B1-%EC%B7%A8%EB%AF%B8%EC%97%AC%EA%B0%80-%ED%83%90%EC%83%89-%ED%94%8C%EB%9E%AB%ED%8F%BC/id1066782203"><img src="images/down_apple.svg" alt="IOS 다운"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.frientrip.frip"><img src="images/down_google.svg" alt="안드로이드 다운"></a>
+                </div>
+            </footer>
+        </div>
+
+        <div id="copyrightPopup" class="popup_overlay">
+            <div class="popup_content">
+                <div class="popup_inner">
+                    <div class="popup_icon">
+                        <span class="emoji">📝</span>
+                    </div>
+                    <div class="popup_header">
+                        <h2>PORTFOLIO NOTICE</h2>
+                        <div class="line"></div>
+                    </div>
+                    <div class="popup_body">
+                        <p>본 사이트는 취업을 위한 <strong>개인 포트폴리오</strong> 용도로 제작되었습니다.</p>
+                        <p>실제 서비스인 '프립(Frip)'의 콘텐츠를 인용하였으며, <strong>비영리적 목적의 학습용</strong> 프로젝트임을 밝힙니다.</p>
+                        <p class="sub">모든 디자인 및 리소스의 저작권은 원저작권자에게 있습니다.</p>
+                    </div>
+                    <div class="popup_footer">
+                        <button type="button"  aria-label="오늘 하루 보지 않기" class="btn_today" onclick="closePopupToday()">오늘 하루 보지 않기</button>
+                        <button type="button"  aria-label="확인했습니다" class="btn_close" onclick="closePopup()">확인했습니다</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>호스트 지원</title>
+    <link rel="preload" href="./fonts/SUIT-Variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/NanumSquareNeo-Variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/basicStyle.css">
+    <link rel="stylesheet" href="css/host.css">
+    <script src="js/jquery-4.0.0.min.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/host.js" defer></script>
+</head>
+<body>
+    <header id="header" class="header">
+            <div class="gnb_bg"><div class="bg_line"></div></div>
+            <div class="gnb_wrap">
+                <h1 class="logo"><a href="index.html"><img src="images/logo.svg" alt="FRIP"></a></h1>
+
+                <nav id="gnb" class="gnb">
+                    <span class="gnb_hover_pad"></span>
+                    <h2 class="hide">주요 메뉴</h2>
+                    <ul class="gnb_1depth">
+                        <li class="art"><a href="dep1_art.html">예술</a>
+                            <ul class="gnb_2depth">
+                                <li class="paint"><a href="painting.html">미술</a></li>
+                                <li class="craft"><a href="craft.html">공예</a></li>
+                                <li class="media"><a href="media.html">미디어</a></li>
+                                <li class="stage"><a href="performance.html">공연</a></li>
+                                <li class="literature"><a href="literature.html">문학</a></li>
+                            </ul>
+                        </li>
+                        <li class="sport"><a href="dep1_sports.html">스포츠</a>
+                            <ul class="gnb_2depth">
+                                <li class="fitness"><a href="fitness.html">피트니스</a></li>
+                                <li class="ball"><a href="ball.html">구기</a></li>
+                                <li class="combat"><a href="cambat.html">격투</a></li>
+                                <li class="outdoor"><a href="outdoor.html">아웃도어</a></li>
+                                <li class="water"><a href="water.html">수상</a></li>
+                            </ul>
+                        </li>
+                        <li class="food"><a href="dep1_food.html">음식</a>
+                            <ul class="gnb_2depth">
+                                <li class="cook"><a href="cooking.html">요리</a></li>
+                                <li class="baking"><a href="baking.html">베이킹</a></li>
+                                <li class="cafe"><a href="drink.html">음료</a></li>
+                                <li class="gourmet"><a href="gourmet.html">미식</a></li>
+                            </ul>
+                        </li>
+                        <li class="selfdev"><a href="dep1_growth.html">자기계발</a>
+                            <ul class="gnb_2depth">
+                                <li class="mind"><a href="mind.html">마인드</a></li>
+                                <li class="learn"><a href="learning.html">학습</a></li>
+                                <li class="career"><a href="career.html">커리어</a></li>
+                                <li class="comm"><a href="comm.html">커뮤니케이션</a></li>
+                                <li class="beauty"><a href="beauty.html">뷰티</a></li>
+                            </ul>
+                        </li>
+                        <li class="meet"><a href="dep1_social.html">모임</a>
+                            <ul class="gnb_2depth">
+                                <li class="club"><a href="meeting.html">만남</a></li>
+                                <li class="taste"><a href="culture.html">문화예술</a></li>
+                                <li class="study"><a href="study.html">스터디</a></li>
+                            </ul>
+                        </li>
+                        <li class="online"><a href="dep1_online.html">온라인</a>
+                            <ul class="gnb_2depth">
+                                <li class="live"><a href="online.html">라이브</a></li>
+                                <li class="class"><a href="class.html">클래스</a></li>
+                                <li class="challenge"><a href="challenge.html">챌린지</a></li>
+                            </ul>
+                        </li>
+                        <li class="trip"><a href="dep1_travel.html">여행</a>
+                            <ul class="gnb_2depth">
+                                <li class="local"><a href="korea.html">국내여행</a></li>
+                                <li class="global"><a href="jeju.html">제주여행</a></li>
+                                <li class="global"><a href="adroad.html">해외여행</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="top_menu">
+                    <div class="host">
+                        <h2 class="hide">사용자 메뉴</h2>
+                        <a href="host.html">호스트 지원</a>
+                    </div>
+
+                    <div class="util">
+                        <h2 class="hide">유틸메뉴</h2>
+                        <ul>
+                            <li class="like"><a href="like.html"><img src="images/like.svg" alt="찜"></a></li>
+                            <li class="notice"><a href="notice.html"><img src="images/notice.svg" alt="공지사항"></a></li>
+                            <li class="my">
+                                <a href="#" class="mypage-btn">
+                                    <img src="images/my.svg" alt="My">
+                                    <span class="user_name"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <main>
+        <h1 class="hide">프립 호스트 지원 안내</h1>
+
+        <div class="content_wrapper">
+            <section class="host_main">
+                <h2 class="main_title">당신의 경험이<br>누군가의<br>새로운 취미가 됩니다.</h2>
+                <figure class="main_visual">
+                    <img src="images/host_main.jpg" alt="">
+                </figure>
+            </section>
+
+                <p>
+                    좋아하는 것을 나누고 사람들을 만나며<br>
+                    새로운 수익까지 만들어보세요
+                </p>
+
+                <p>지금 프립 호스트로 시작해보세요</p> 
+
+                <a href="#none" class="cta_button">지금 시작하기</a>
+        </div>
+
+
+        <section class="host_why">
+            <div class="why_sticky">
+                <h2 class="section_title">결국, 프립인 이유</h2>
+
+                <div class="card_viewport">
+                    <ul class="why_card">
+                        <li class="why_cardList">
+                            <div class="why_cardCont">
+                                <div>
+                                    <h3 class="why_cardTitle">150만 크루가<br>기다리고 있어요</h3>
+
+                                    <p class="why_cardTxt">
+                                        어렵게 참여자를 찾아 헤매지 마세요.
+
+                                        대한민국 1등 취미여가 플랫폼 프립이
+                                        호스트님의 첫 만남을 연결합니다.
+                                    </p>
+                                </div>
+                                <figure class="why_cardImg">
+                                    <img src="images/host_why1.jpg" alt="">
+                                </figure>
+                            </div>
+                        </li>
+
+                        <li class="why_cardList">
+                            <div class="why_cardCont">
+                                <div>
+                                    <h3 class="why_cardTitle">단순한 모임장을 넘어<br>하나의 '브랜드'로</h3>
+
+                                    <p class="why_cardTxt">
+                                        활동이 쌓일수록 호스트님의 경험은
+                                        독보적인 브랜드가 됩니다.
+
+                                        취미를 넘어 나만의 커리어를 만드세요.
+                                    </p>
+                                </div>
+                                <figure class="why_cardImg">
+                                    <img src="images/host_why2.jpg" alt="">
+                                </figure>
+                            </div>
+                        </li>
+
+                        <li class="why_cardList">
+                            <div class="why_cardCont">
+                                <div>
+                                    <h3 class="why_cardTitle">기업과 협업하는 기회까지</h3>
+
+                                    <p class="why_cardTxt">
+                                        프립과 제휴한 다양한 브랜드와
+                                        비지니스 파트너로 협업하세요.
+
+                                        콘텐츠의 한계를 넓힐 기회입니다.
+                                    </p>
+                                </div>
+                                <figure class="why_cardImg">
+                                    <img src="images/host_why3.jpg" alt="">
+                                </figure>
+                            </div>
+                        </li>
+
+                        <li class="why_cardList">
+                            <div class="why_cardCont">
+                                <div>
+                                    <h3 class="why_cardTitle">운영은 프립이 도와드려요</h3>
+
+                                    <p class="why_cardTxt">    
+                                        정산부터 CS까지 번거로운 운영은
+                                        프립의 시스템에 맡겨두세요.
+
+                                        호스팅의 즐거움에만 몰입하세요.
+                                    </p>
+                                </div>
+                                <figure class="why_cardImg">
+                                    <img src="images/host_why1.jpg" alt="">
+                                </figure>
+                            </div>
+                        </li>
+
+                        <li class="why_cardList">
+                            <div class="why_cardCont">
+                                <div>
+                                    <h3 class="why_cardTitle">호스트 컨시어지 (유료)</h3>
+
+                                    <p class="why_cardTxt">
+                                        디자인, 마케팅, 사진 촬영 등
+                                        호스트님의 성공을 돕기 위한 다양한 지원을
+                                        호스트 컨시어지 서비스로 제공합니다.
+                                    </p>
+                                </div>
+                                <figure class="why_cardImg">
+                                    <img src="images/host_why5.jpg" alt="">
+                                </figure>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="host_life">
+            <h2 class="section_title">꿈꿔온 일을 하며 사는 호스트</h2>
+
+                <p>
+                    좋아하는 재능이 수익이 되고, 진정 원하는 삶으로 이어지는 여정.<br>
+                    프립과 함께 인생의 새로운 챕터를 열어가는 호스트들의 이야기입니다.
+                </p>
+
+            <ul>
+                <li>
+                    <img src="images/host_life1.jpg" alt="레더레스트 호스트님 대학로 가죽공방 운영 '프립을 통해 최대 매출을 달성했어요.'">
+                </li>
+                <li>
+                    <img src="images/host_life2.jpg" alt="성지연 호스트님 역사교육전공(경력 10년) '프립과 함께한 지 9년! 팬층이 두터워 모임을 오픈하자마자 마감돼요.'">
+                </li>
+                <li>
+                    <img src="images/host_life3.jpg" alt="죠지 호스트님 독립영화 감독이자 작가, 배우 '혼자 발품 팔아 강의하다가 프립 호스트 컨시어지 도움으로 사업 형태가 구체화되었어요!'">
+                </li>
+                <li>
+                    <img src="images/host_life4.jpg" alt="시샘 호스트님 그림책 테라피스트 '좋아하는 걸 직업으로 만들었어요! 그림책을 좋아해서, 그림책으로 사람들과 대화하는 모임을 운영해요.'">
+                </li>
+            </ul>
+        </section>
+
+        <section class="host_day">
+            <h2 class="section_title">한자리에 모이는 특별한 시간</h2>
+
+            <div class="day_container">
+                <div class="video_wrapper">
+                    <div id="player"></div>
+                    <div class="video_overlay"></div>
+                </div>
+
+                <div class="day_info">
+                    <h3 class="day_title">프립 호스트 데이</h3>
+                    <p class="day_txt">
+                        프립에서 꿈꿔온 일을 실현하고 있는 호스트들이 모여<br>
+                        성공 사례를 공유하고 콘텐츠 협업 기회를 탐색하는 자리입니다.
+                    </p>
+                    <p class="day_txt">
+                        프립 호스트를 위한 연 1회 행사로,<br>
+                        함께 성장하고 교류할 수 있는 소중한 기회를 제공합니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="host_step">
+            <div class="step_scroll_wrapper">
+                <div class="step_sticky_area">
+                    <h2 class="section_title">호스트가 되는 과정</h2>
+                    <ul class="step_list">
+                        <li class="step_item active">
+                            <h3>호스트 가입하기</h3>
+                            <figure class="step_img"><img src="images/host_step1.jpg" alt=""></figure>
+                            <p>프립 계정이 있다면, 바로 시작하세요. 계정이 없어도 SNS나 이메일로 간편하게 가입 후 즉시 활동 가능합니다.</p>
+                        </li>
+                        <li class="step_item">
+                            <h3>프립 만들기</h3>
+                            <figure class="step_img"><img src="images/host_step2.jpg" alt=""></figure>
+                            <p>호스트 어드민의 '프립 만들기' 빌더를 통해 쉽고 빠르게 프립 호스팅을 시작해보세요.</p>
+                        </li>
+                        <li class="step_item">
+                            <h3>프립 진행하기</h3>
+                            <figure class="step_img"><img src="images/host_step3.jpg" alt=""></figure>
+                            <p>모집된 크루들과 즐겁게 소통하며 콘텐츠를 진행하세요. 모임 후 참여자 후기를 바탕으로 더 매력적인 경험을 설계할 수 있습니다.</p>
+                        </li>
+                        <li class="step_item">
+                            <h3>정산 받기</h3>
+                            <figure class="step_img"><img src="images/host_step4.jpg" alt=""></figure>
+                            <p>매주 정산으로 한 달 기다림 없이 안정적인 수익을 얻으세요. 어드민에서 내역 확인과 지급 요청을 간편하게 관리할 수 있습니다.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="host_faq">
+            <div class="faq_container">
+                <h2 class="section_title">자주 하는 질문</h2>
+
+                <ul class="faq_list">
+                    <li class="faq_item">
+                        <div class="faq_q">
+                            <h3>호스트는 누구나 할 수 있나요?</h3>
+                            <span class="icon_plus"></span>
+                        </div>
+                        <div class="faq_a">
+                            <p>프립은 누구에게나 열려 있습니다! 마음속에 품고 있는 특별한 액티비티가 있다면, 호스트로 가입해 프립에서 그 열정을 실현해보세요.</p>
+                        </div>
+                    </li>
+
+                    <li class="faq_item">
+                        <div class="faq_q">
+                            <h3>내가 운영하는 프립, 많은 사람들이 참여할 수 있을까요?</h3>
+                            <span class="icon_plus"></span>
+                        </div>
+                        <div class="faq_a">
+                            <p>프립은 호스트님들을 지원하기 위해 '프립 호스트 컨시어지 서비스'를 제공하고 있습니다. 상세 페이지 디자인, 사진 촬영, 광고 서비스 등을 전문가의 컨설팅과 함께 활용해보세요.</p>
+                        </div>
+                    </li>
+
+                    <li class="faq_item">
+                        <div class="faq_q">
+                            <h3>정산은 어떻게 진행되나요?</h3>
+                            <span class="icon_plus"></span>
+                        </div>
+                        <div class="faq_a">
+                            <p>프립에서는 매주 수요일마다 정산이 진행됩니다. 한 달을 기다리지 않고, 매주 수요일 안정적으로 수익을 받으실 수 있습니다.</p>
+                        </div>
+                    </li>
+
+                    <li class="faq_item">
+                        <div class="faq_q">
+                            <h3>프립에서 인기가 많아지면 추가적인 혜택이 있나요?</h3>
+                            <span class="icon_plus"></span>
+                        </div>
+                        <div class="faq_a">
+                            <p>프립은 슈퍼호스트 제도를 운영하고 있습니다. 매달 성과가 뛰어난 호스트님들을 선정하여 수수료 환급, 기획전 노출 등 다양한 혜택을 제공합니다.</p>
+                        </div>
+                    </li>
+
+                    <li class="faq_item">
+                        <div class="faq_q">
+                            <h3>호스트 가입, 프립 만들기 과정에서 어려움이 있어요.</h3>
+                            <span class="icon_plus"></span>
+                        </div>
+                        <div class="faq_a">
+                            <p>문의 사항이 있으시면, 카카오톡 채널 “프립호스트”로 메시지를 보내주시거나, frip@frientrip.com으로 이메일을 남겨주시면 빠르게 답변 드리겠습니다.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="host_btn">
+            <h2 class="section_title">지금 호스트가<br>되어보세요</h2>
+
+            <a href="#none" class="cta_button">지금 시작하기</a>
+        </section>
+    </main>
+
+    <div class="footer_wrap">
+        <footer id="footer" class="footer">
+            <h2 class="f_logo">Frientrip</h2>
+            <h3 class="hide">고객 지원</h3>
+            <div class="supt">
+                <a href="#none" class="a_click">QnA</a>
+                <a href="#none" class="a_click">호스트 지원</a>
+            </div>    
+            <h3 class="hide">카카오톡 상담</h3>
+            <div class="kakao">
+                <div class="kakao_chat">
+                    <a href="#none" class="c_chat"><img src="images/chat_icon.svg" alt="">고객 채팅상담</a>
+                    <a href="#none" class="h_chat"><img src="images/chat_icon.svg" alt="">호스트지원 채팅상담</a>
+                </div>
+                <p>운영시간<span class="line"></span>평일 주말 10:00~17:00 (점심 12:00~13:00)</p>
+            </div>
+
+            <div class="f_txt">
+                <div class="f_txt1">
+                    <p><span class="review_number">주</span>프렌트립<span class="line"></span>대표 임수열<span class="line"></span>개인정보관리책임자 양사열<span class="line"></span>사업자등록번호 261-81-04385<span class="line"></span>통신판매업신고번호 2016-서울성동-01088</p>
+                    <p>주소 서울특별시 성동구 왕십리로 115 헤이그라운드 서울숲점 G704<span class="line"></span>광고 제휴문의 contact@frientrip.com</p>
+                </div>
+                <div class="f_txt2">
+                    <p><a href="#none" class="a_click">이용약관</a><span class="line"></span><a href="#none" class="a_click">개인정보 처리방침</a><span class="line"></span><a href="#none" class="a_click">NICEPAY 안전거래 서비스</a></p>
+                    <p><span class="review_number">주</span>프렌트립은 통신판매 중개자로서 거래 당사자가 아니며, 호스트가 등록한 상품정보 및 거래에 대해 <span class="review_number">주</span>프렌트립은 일체의 책임을 지지 않습니다.</p>
+                </div>
+            </div>
+
+            <h3 class="hide">프립 연결링크</h3>
+            <div class="f_link">
+                <a href="https://www.instagram.com/frip_korea" class="instagram"><img src="images/instagram.svg" alt="인스타그램"></a>
+                <a href="https://www.facebook.com/frientrip" class="facebook"><img src="images/facebook.svg" alt="페이스북"></a>
+                <a href="https://www.youtube.com/channel/UCgYVh2nh8nfC0wHEdkWLLZg?view_as=subscriber" class="youtube"><img src="images/youtube.svg" alt="유튜브"></a>
+                <span class="f_line"></span>
+                <a href="https://apps.apple.com/kr/app/%ED%94%84%EB%A6%BD-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-1%EB%93%B1-%EC%B7%A8%EB%AF%B8%EC%97%AC%EA%B0%80-%ED%83%90%EC%83%89-%ED%94%8C%EB%9E%AB%ED%8F%BC/id1066782203"><img src="images/down_apple.svg" alt="IOS 다운"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.frientrip.frip"><img src="images/down_google.svg" alt="안드로이드 다운"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+<div class="video_modal">
+    <div class="video_modal_inner">
+        <button class="video_close">✕</button>
+        <div id="modal_player"></div>
+    </div>
+</div>
+</html>

@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여행</title>
+    <link rel="preload" href="./fonts/SUIT-Variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/NanumSquareNeo-Variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/basicStyle.css">
+    <link rel="stylesheet" href="css/servePage.css">
+    <style>
+        .serv_bg {
+            background: url(images/trip_bg.jpg) no-repeat;
+        }
+    </style>
+    <script src="js/jquery-4.0.0.min.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/servePage.js" defer></script>
+</head>
+<body>
+    <div class="skip_menu">
+        <a href="#none">사이트맵 바로가기</a>
+        <a href="#none">여행 카테고리 소개 바로가기</a>
+        <a href="#none">여행 프립 TOP10 바로가기</a>
+        <a href="#none">여행 프립 바로가기</a>
+    </div>
+
+    <div class="wrap">
+        <header id="header" class="header">
+            <div class="gnb_bg"><div class="bg_line"></div></div>
+            <div class="gnb_wrap">
+                <h1 class="logo"><a href="index.html"><img src="images/logo.svg" alt="FRIP"></a></h1>
+
+                <nav id="gnb" class="gnb">
+                    <span class="gnb_hover_pad"></span>
+                    <h2 class="hide">주요 메뉴</h2>
+                    <ul class="gnb_1depth">
+                        <li class="art"><a href="dep1_art.html">예술</a>
+                            <ul class="gnb_2depth">
+                                <li class="paint"><a href="painting.html">미술</a></li>
+                                <li class="craft"><a href="craft.html">공예</a></li>
+                                <li class="media"><a href="media.html">미디어</a></li>
+                                <li class="stage"><a href="performance.html">공연</a></li>
+                                <li class="literature"><a href="literature.html">문학</a></li>
+                            </ul>
+                        </li>
+                        <li class="sport"><a href="dep1_sports.html">스포츠</a>
+                            <ul class="gnb_2depth">
+                                <li class="fitness"><a href="fitness.html">피트니스</a></li>
+                                <li class="ball"><a href="ball.html">구기</a></li>
+                                <li class="combat"><a href="cambat.html">격투</a></li>
+                                <li class="outdoor"><a href="outdoor.html">아웃도어</a></li>
+                                <li class="water"><a href="water.html">수상</a></li>
+                            </ul>
+                        </li>
+                        <li class="food"><a href="dep1_food.html">음식</a>
+                            <ul class="gnb_2depth">
+                                <li class="cook"><a href="cooking.html">요리</a></li>
+                                <li class="baking"><a href="baking.html">베이킹</a></li>
+                                <li class="cafe"><a href="drink.html">음료</a></li>
+                                <li class="gourmet"><a href="gourmet.html">미식</a></li>
+                            </ul>
+                        </li>
+                        <li class="selfdev"><a href="dep1_growth.html">자기계발</a>
+                            <ul class="gnb_2depth">
+                                <li class="mind"><a href="mind.html">마인드</a></li>
+                                <li class="learn"><a href="learning.html">학습</a></li>
+                                <li class="career"><a href="career.html">커리어</a></li>
+                                <li class="comm"><a href="comm.html">커뮤니케이션</a></li>
+                                <li class="beauty"><a href="beauty.html">뷰티</a></li>
+                            </ul>
+                        </li>
+                        <li class="meet"><a href="dep1_social.html">모임</a>
+                            <ul class="gnb_2depth">
+                                <li class="club"><a href="meeting.html">만남</a></li>
+                                <li class="taste"><a href="culture.html">문화예술</a></li>
+                                <li class="study"><a href="study.html">스터디</a></li>
+                            </ul>
+                        </li>
+                        <li class="online"><a href="dep1_online.html">온라인</a>
+                            <ul class="gnb_2depth">
+                                <li class="live"><a href="online.html">라이브</a></li>
+                                <li class="class"><a href="class.html">클래스</a></li>
+                                <li class="challenge"><a href="challenge.html">챌린지</a></li>
+                            </ul>
+                        </li>
+                        <li class="trip"><a href="dep1_travel.html">여행</a>
+                            <ul class="gnb_2depth">
+                                <li class="local"><a href="korea.html">국내여행</a></li>
+                                <li class="global"><a href="jeju.html">제주여행</a></li>
+                                <li class="global"><a href="adroad.html">해외여행</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="top_menu">
+                    <div class="host">
+                        <h2 class="hide">사용자 메뉴</h2>
+                        <a href="host.html">호스트 지원</a>
+                    </div>
+
+                    <div class="util">
+                        <h2 class="hide">유틸메뉴</h2>
+                        <ul>
+                            <li class="like"><a href="like.html"><img src="images/like.svg" alt="찜"></a></li>
+                            <li class="notice"><a href="notice.html"><img src="images/notice.svg" alt="공지사항"></a></li>
+                            <li class="my">
+                                <a href="#" class="mypage-btn">
+                                    <img src="images/my.svg" alt="My">
+                                    <span class="user_name"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main id="main" class="main">
+            <section class="serv_main">
+                <div class="serv_bg">
+                    <div class="bgt_wrap">
+                        <p class="bg_title">Travel</p>
+                        <h2 class="bg_text">일상 밖에서 만나는<br>새로운 풍경을 경험해보세요</h2>
+                    </div>
+                </div>
+                <div class="serv_desc">
+                    <ul role="tablist">
+                        <li>
+                            <button type="button">
+                                <span>국내여행</span>
+                                <img src="images/servbg_desc.svg" alt="자세히보기">
+                            </button>
+                            <div class="desc_cont">
+                                <ul>
+                                    <li>당일치기</li>
+                                    <li>감성숙소</li>
+                                    <li>로컬투어</li>
+                                    <li>액티비티</li>
+                                    <li>미식</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span>제주여행</span>
+                                <img src="images/servbg_desc.svg" alt="자세히보기">
+                            </button>
+                            <div class="desc_cont">
+                                <ul>
+                                    <li>오름트레킹</li>
+                                    <li>바다 액티비티</li>
+                                    <li>로컬 클래스</li>
+                                    <li>감성 스테이</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span>해외여행</span>
+                                <img src="images/servbg_desc.svg" alt="자세히보기">
+                            </button>
+                            <div class="desc_cont">
+                                <ul>
+                                    <li>테마여행</li>
+                                    <li>문화체험</li>
+                                    <li>소그룹 투어</li>
+                                    <li>워케이션</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="top10">
+                <h2>여행 프립 TOP 10</h2>
+                <div class="top_view">
+                    <div class="top_cont">
+                        <div class="block">
+                            <a href="#none">
+                                <dl>
+                                    <div class="top_text">
+                                        <dt>
+                                            <div class="img_container"><img src="images/trip_top1.jpg" alt=""></div>
+                                            <strong class="top_subtitle">[부산] 소규모 #부산야경 #스냅투어 (예약가능)</strong>
+                                        </dt>
+                                        <dd class="price">
+                                            <span class="before_price sub_t"></span>
+                                            <span class="hide"></span>
+                                            <span class="sale"></span>
+                                            <span class="hide"></span>
+                                            <span class="after_price">65,000원</span>
+                                        </dd>
+                                        <dd class="locate sub_t">온라인</dd>
+                                        <dd class="review">
+                                            <div class="star_wrap">
+                                                <span class="star_bg">
+                                                    <span class="star_fill" style="width: 100%"></span>
+                                                </span>
+                                            </div>
+                                            <span class="hide">별점</span>
+                                            <span class="review_text sub_t">4.9</span>
+                                            <span class="hide">점</span>
+                                            <span class="hide">후기</span>
+                                            <span class="review_number sub_t">35</span>
+                                            <span class="hide">개</span>
+                                        </dd>
+                                    </div>
+                                </dl>
+                            </a>
+                            <button type="button" class="btn_wish">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                    <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                </svg>
+                                <span class="hide">찜하기</span>
+                            </button>
+                        </div>
+
+                        <div class="block">
+                            <a href="#none">
+                                <dl>
+                                    <div class="top_text">
+                                        <dt>
+                                            <div class="img_container"><img src="images/trip_top2.jpg" alt=""></div>
+                                            <strong class="top_subtitle">[제주] 고즈넉한 숲길을 말과 함께, 숲길 승마 (예약가능)</strong>
+                                        </dt>
+                                        <dd class="price">
+                                            <span class="before_price sub_t"></span>
+                                            <span class="hide"></span>
+                                            <span class="sale"></span>
+                                            <span class="hide"></span>
+                                            <span class="after_price">70,000원</span>
+                                        </dd>
+                                        <dd class="locate sub_t">서귀포시</dd>
+                                        <dd class="review">
+                                            <div class="star_wrap">
+                                                <span class="star_bg">
+                                                    <span class="star_fill" style="width: 98%"></span>
+                                                </span>
+                                            </div>
+                                            <span class="hide">별점</span>
+                                            <span class="review_text sub_t">4.9</span>
+                                            <span class="hide">점</span>
+                                            <span class="hide">후기</span>
+                                            <span class="review_number sub_t">64</span>
+                                            <span class="hide">개</span>
+                                        </dd>
+                                    </div>
+                                </dl>
+                            </a>
+                            <button type="button" class="btn_wish">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                    <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                </svg>
+                                <span class="hide">찜하기</span>
+                            </button>
+                        </div>
+
+                        <div class="block">
+                            <a href="#none">
+                                <dl>
+                                    <div class="top_text">
+                                        <dt>
+                                            <div class="img_container"><img src="images/trip_top3.jpg" alt=""></div>
+                                            <strong class="top_subtitle">[설날연휴|출발확정✈️] 에베레스트 베이스캠프 트레킹 & 헬기 하산</strong>
+                                        </dt>
+                                        <dd class="price">
+                                            <span class="before_price sub_t"></span>
+                                            <span class="hide"></span>
+                                            <span class="sale"></span>
+                                            <span class="hide"></span>
+                                            <span class="after_price">3,980,000원</span>
+                                        </dd>
+                                        <dd class="locate sub_t">네팔</dd>
+                                        
+                                        <dd class="review">
+                                            <div class="star_wrap">
+                                                <span class="star_bg">
+                                                    <span class="star_fill" style="width: 98%"></span>
+                                                </span>
+                                            </div>
+                                            <span class="hide">별점</span>
+                                            <span class="review_text sub_t">5.0</span>
+                                            <span class="hide">점</span>
+                                            <span class="hide">후기</span>
+                                            <span class="review_number sub_t">3</span>
+                                            <span class="hide">개</span>
+                                        </dd>
+                                    </div>
+                                </dl>
+                            </a>
+                            <button type="button" class="btn_wish">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                    <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                </svg>
+                                <span class="hide">찜하기</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="top_slider">
+                        <div class="slider_control">
+                            <div class="top_page">
+                                <span class="top_current">1</span>
+                                <span class="top_total">8</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress_fill"></div>
+                            </div>
+                        </div>
+                        <div class="top_buttons">
+                            <button type="button" class="pre_more"><span class="hide">이전</span></button>
+                            <button type="button" class="next_more"><span class="hide">다음</span></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="frip_wrap">
+                <div class="frip_title">
+                    <h2>여행</h2>
+                    <ul class="serv_tab">
+                        <li><button type="button" data-category="all" class="active">전체</button></li>
+                        <li><button type="button" data-category="korea">국내</button></li>
+                        <li><button type="button" data-category="jeju">제주</button></li>
+                        <li><button type="button" data-category="adroad">해외</button></li>
+                    </ul>
+                </div>
+
+                <div class="frip_cont">
+                    <div class="block serv_list" data-category="jeju">
+                        <a href="#none">
+                            <dl>
+                                <div class="frip_text">
+                                    <dt>
+                                        <div class="img_container"><img src="images/trip_1.jpg" alt=""></div>
+                                        <strong class="frip_subtitle">[제주] 제주 핫플 서부권코스 원데이 버스투어_매일 출발 (예약가능)</strong>
+                                    </dt>
+                                    <dd class="price">
+                                        <span class="before_price sub_t"></span>
+                                        <span class="hide"></span>
+                                        <span class="sale"></span>
+                                        <span class="hide"></span>
+                                        <span class="after_price">32,800원</span>
+                                    </dd>
+                                    <dd class="locate sub_t">제주시</dd>
+                                    <dd class="review">
+                                        <div class="star_wrap">
+                                            <span class="star_bg">
+                                                <span class="star_fill" style="width: 98%"></span>
+                                            </span>
+                                        </div>
+                                        <span class="hide">별점</span>
+                                        <span class="star_score sub_t">4.9</span>
+                                        <span class="hide">점</span>
+                                        <span class="hide">후기</span>
+                                        <span class="review_number sub_t">13</span>
+                                        <span class="hide">개</span>
+                                    </dd>
+                                </div>
+                            </dl>
+                        </a>
+                        <button type="button" class="btn_wish">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                            </svg>
+                            <span class="hide">찜하기</span>
+                        </button>
+                    </div>
+                    <div class="new_wrap">
+                        <div class="block serv_list" data-category="korea">
+                            <a href="#none">
+                                <dl>
+                                    <div class="frip_text">
+                                        <dt>
+                                            <div class="img_container"><img src="images/trip_2.jpg" alt=""></div>
+                                            <strong class="frip_subtitle">[담양] 즐거운 커피 여행 ☕#커피농장 #바리스타체험</strong>
+                                        </dt>
+                                        <dd class="price">
+                                            <span class="before_price sub_t"></span>
+                                            <span class="hide"></span>
+                                            <span class="sale"></span>
+                                            <span class="hide"></span>
+                                            <span class="after_price">45,000원</span>
+                                        </dd>
+                                        <dd class="locate sub_t">전라 전체</dd>
+                                    </div>
+                                </dl>
+                            </a>
+                            <button type="button" class="btn_wish">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                    <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                </svg>
+                                <span class="hide">찜하기</span>
+                            </button>
+                            <span class="tag_new">신규</span>
+                        </div>
+                    </div>
+                    <div class="block serv_list" data-category="jeju">
+                        <a href="#none">
+                            <dl>
+                                <div class="frip_text">
+                                    <dt>
+                                        <div class="img_container"><img src="images/trip_3.jpg" alt=""></div>
+                                        <strong class="frip_subtitle">[제주] 제주도에서 밤에 뭐하지? 오름별 투어 (당일 예약 가능)</strong>
+                                    </dt>
+                                    <dd class="price">
+                                        <span class="before_price sub_t"></span>
+                                        <span class="hide"></span>
+                                        <span class="sale"></span>
+                                        <span class="hide"></span>
+                                        <span class="after_price">30,000원</span>
+                                    </dd>
+                                    <dd class="locate sub_t">제주시</dd>
+                                    <dd class="review">
+                                        <div class="star_wrap">
+                                            <span class="star_bg">
+                                                <span class="star_fill" style="width: 100%"></span>
+                                            </span>
+                                        </div>
+                                        <span class="hide">별점</span>
+                                        <span class="star_score sub_t">5.0</span>
+                                        <span class="hide">점</span>
+                                        <span class="hide">후기</span>
+                                        <span class="review_number sub_t">44</span>
+                                        <span class="hide">개</span>
+                                    </dd>
+                                </div>
+                            </dl>
+                        </a>
+                        <button type="button" class="btn_wish">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                            </svg>
+                            <span class="hide">찜하기</span>
+                        </button>
+                    </div>
+                    <div class="block serv_list" data-category="jeju">
+                        <a href="#none">
+                            <dl>
+                                <div class="frip_text">
+                                    <dt>
+                                        <div class="img_container"><img src="images/trip_4.jpg" alt=""></div>
+                                        <strong class="frip_subtitle">[제주] 제주 핫플 동부권코스 원데이 버스투어 (예약 가능)</strong>
+                                    </dt>
+                                    <dd class="price">
+                                        <span class="before_price sub_t"></span>
+                                        <span class="hide"></span>
+                                        <span class="sale"></span>
+                                        <span class="hide"></span>
+                                        <span class="after_price">34,800원</span>
+                                    </dd>
+                                    <dd class="locate sub_t">제주시</dd>
+                                    <dd class="review">
+                                        <div class="star_wrap">
+                                            <span class="star_bg">
+                                                <span class="star_fill" style="width: 98%"></span>
+                                            </span>
+                                        </div>
+                                        <span class="hide">별점</span>
+                                        <span class="star_score sub_t">4.9</span>
+                                        <span class="hide">점</span>
+                                        <span class="hide">후기</span>
+                                        <span class="review_number sub_t">12</span>
+                                        <span class="hide">개</span>
+                                    </dd>
+                                </div>
+                            </dl>
+                        </a>
+                        <button type="button" class="btn_wish">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                            </svg>
+                            <span class="hide">찜하기</span>
+                        </button>
+                    </div>
+                    <div class="bucketfrip_wrap">
+                        <div class="block serv_list" data-category="adroad">
+                            <a href="#none">
+                                <dl>
+                                    <div class="frip_text">
+                                        <dt>
+                                            <div class="img_container"><img src="images/trip_5.jpg" alt=""></div>
+                                            <strong class="frip_subtitle">라틴 패키지 남미 배낭여행 17박 21일 [버킷프립]</strong>
+                                        </dt>
+                                        <dd class="price">
+                                            <span class="before_price sub_t"></span>
+                                            <span class="hide"></span>
+                                            <span class="sale"></span>
+                                            <span class="hide"></span>
+                                            <span class="after_price">2,145,000원</span>
+                                        </dd>
+                                        <dd class="locate sub_t">남미</dd>
+                                    </div>
+                                </dl>
+                            </a>
+                            <button type="button" class="btn_wish">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                    <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                </svg>
+                                <span class="hide">찜하기</span>
+                            </button>
+                            <span class="tag_bucketfrip">버킷프립</span>
+                        </div>
+                    </div>
+                    <div class="new_wrap">
+                        <div class="block serv_list" data-category="adroad">
+                            <a href="#none">
+                                <dl>
+                                    <div class="frip_text">
+                                        <dt>
+                                            <div class="img_container"><img src="images/trip_6.jpg" alt=""></div>
+                                            <strong class="frip_subtitle">[프리다이빙+요가] 필리핀, 두마게티 4박 5일 웰니스 트립!</strong>
+                                        </dt>
+                                        <dd class="price">
+                                            <span class="before_price sub_t">1,670,000원</span>
+                                            <span class="hide">에서</span>
+                                            <span class="sale">5%</span>
+                                            <span class="hide">할인</span>
+                                            <span class="after_price">1,580,000원</span>
+                                        </dd>
+                                        <dd class="locate sub_t">필리핀 두마게티</dd>
+                                    </div>
+                                </dl>
+                            </a>
+                            <button type="button" class="btn_wish">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                    <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                </svg>
+                                <span class="hide">찜하기</span>
+                            </button>
+                            <span class="tag_new">신규</span>
+                        </div>
+                    </div>
+                    <div class="block serv_list" data-category="korea">
+                        <a href="#none">
+                            <dl>
+                                <div class="frip_text">
+                                    <dt>
+                                        <div class="img_container"><img src="images/trip_7.jpg" alt=""></div>
+                                        <strong class="frip_subtitle">서울 궁궐 산책 Palace Tour in Seoul</strong>
+                                    </dt>
+                                    <dd class="price">
+                                        <span class="before_price sub_t"></span>
+                                        <span class="hide"></span>
+                                        <span class="sale"></span>
+                                        <span class="hide"></span>
+                                        <span class="after_price">19,000원</span>
+                                    </dd>
+                                    <dd class="locate sub_t">종로<span class="line"></span>중구</dd>
+                                    <dd class="review">
+                                        <div class="star_wrap">
+                                            <span class="star_bg">
+                                                <span class="star_fill" style="width: 100%"></span>
+                                            </span>
+                                        </div>
+                                        <span class="hide">별점</span>
+                                        <span class="star_score sub_t">5.0</span>
+                                        <span class="hide">점</span>
+                                        <span class="hide">후기</span>
+                                        <span class="review_number sub_t">21</span>
+                                        <span class="hide">개</span>
+                                    </dd>
+                                </div>
+                            </dl>
+                        </a>
+                        <button type="button" class="btn_wish">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                            </svg>
+                            <span class="hide">찜하기</span>
+                        </button>
+                    </div>
+                    <div class="block serv_list" data-category="korea">
+                        <a href="#none">
+                            <dl>
+                                <div class="frip_text">
+                                    <dt>
+                                        <div class="img_container"><img src="images/trip_8.jpg" alt=""></div>
+                                        <strong class="frip_subtitle">[광주예술여행] 개화기 모던 걸 의상 체험</strong>
+                                    </dt>
+                                    <dd class="price">
+                                        <span class="before_price sub_t"></span>
+                                        <span class="hide"></span>
+                                        <span class="sale"></span>
+                                        <span class="hide"></span>
+                                        <span class="after_price">20,000원</span>
+                                    </dd>
+                                    <dd class="locate sub_t">광주</dd>
+                                    <dd class="review">
+                                        <div class="star_wrap">
+                                            <span class="star_bg">
+                                                <span class="star_fill" style="width: 100%"></span>
+                                            </span>
+                                        </div>
+                                        <span class="hide">별점</span>
+                                        <span class="star_score sub_t">5.0</span>
+                                        <span class="hide">점</span>
+                                        <span class="hide">후기</span>
+                                        <span class="review_number sub_t">8</span>
+                                        <span class="hide">개</span>
+                                    </dd>
+                                </div>
+                            </dl>
+                        </a>
+                        <button type="button" class="btn_wish">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                            </svg>
+                            <span class="hide">찜하기</span>
+                        </button>
+                    </div>
+                    <div class="block serv_list" data-category="korea">
+                        <a href="#none">
+                            <dl>
+                                <div class="frip_text">
+                                    <dt>
+                                        <div class="img_container"><img src="images/trip_9.jpg" alt=""></div>
+                                        <strong class="frip_subtitle">❤️[8:8 단체소개팅 + 1박2일 여행]서울.경기.충청.전라.경상❤️</strong>
+                                    </dt>
+                                    <dd class="price">
+                                        <span class="before_price sub_t">400,000원</span>
+                                        <span class="hide">에서</span>
+                                        <span class="sale">60%</span>
+                                        <span class="hide">할인</span>
+                                        <span class="after_price">159,000원</span>
+                                    </dd>
+                                    <dd class="locate sub_t">충청 전체</dd>
+                                    <dd class="review">
+                                        <div class="star_wrap">
+                                            <span class="star_bg">
+                                                <span class="star_fill" style="width: 100%"></span>
+                                            </span>
+                                        </div>
+                                        <span class="hide">별점</span>
+                                        <span class="star_score sub_t">5.0</span>
+                                        <span class="hide">점</span>
+                                        <span class="hide">후기</span>
+                                        <span class="review_number sub_t">4</span>
+                                        <span class="hide">개</span>
+                                    </dd>
+                                </div>
+                            </dl>
+                        </a>
+                        <button type="button" class="btn_wish">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                            </svg>
+                            <span class="hide">찜하기</span>
+                        </button>
+                    </div>
+                    <div class="block serv_list" data-category="jeju">
+                        <a href="#none">
+                            <dl>
+                                <div class="frip_text">
+                                    <dt>
+                                        <div class="img_container"><img src="images/trip_10.jpg" alt=""></div>
+                                        <strong class="frip_subtitle">[서귀포] 색다른 제주 경험하기! 신비한 바닷속 탐험! 체험 스쿠버다이빙</strong>
+                                    </dt>
+                                    <dd class="price">
+                                        <span class="before_price sub_t"></span>
+                                        <span class="hide"></span>
+                                        <span class="sale"></span>
+                                        <span class="hide"></span>
+                                        <span class="after_price">150,000원</span>
+                                    </dd>
+                                    <dd class="locate sub_t">서귀포시</dd>
+                                    <dd class="review">
+                                        <div class="star_wrap">
+                                            <span class="star_bg">
+                                                <span class="star_fill" style="width: 100%"></span>
+                                            </span>
+                                        </div>
+                                        <span class="hide">별점</span>
+                                        <span class="star_score sub_t">5.0</span>
+                                        <span class="hide">점</span>
+                                        <span class="hide">후기</span>
+                                        <span class="review_number sub_t">6</span>
+                                        <span class="hide">개</span>
+                                    </dd>
+                                </div>
+                            </dl>
+                        </a>
+                        <button type="button" class="btn_wish">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                            </svg>
+                            <span class="hide">찜하기</span>
+                        </button>
+                    </div>
+                    <div class="new_wrap">
+                        <div class="block serv_list" data-category="jeju">
+                            <a href="#none">
+                                <dl>
+                                    <div class="frip_text">
+                                        <dt>
+                                            <div class="img_container"><img src="images/trip_11.jpg" alt=""></div>
+                                            <strong class="frip_subtitle">[제주] 핑크빛 햇살 제주 피크닉대여 2일</strong>
+                                        </dt>
+                                        <dd class="price">
+                                            <span class="before_price sub_t">70,000원</span>
+                                            <span class="hide">에서</span>
+                                            <span class="sale">26%</span>
+                                            <span class="hide">할인</span>
+                                            <span class="after_price">52,000원</span>
+                                        </dd>
+                                        <dd class="locate sub_t">제주시</dd>
+                                    </div>
+                                </dl>
+                            </a>
+                            <button type="button" class="btn_wish">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                    <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                </svg>
+                                <span class="hide">찜하기</span>
+                            </button>
+                            <span class="tag_new">신규</span>
+                        </div>
+                    </div>
+                    <div class="block serv_list" data-category="jeju">
+                        <a href="#none">
+                            <dl>
+                                <div class="frip_text">
+                                    <dt>
+                                        <div class="img_container"><img src="images/trip_12.jpg" alt=""></div>
+                                        <strong class="frip_subtitle">제주에서 DJ체험 - SOUL LIFE STUDIO DJ CLASS</strong>
+                                    </dt>
+                                    <dd class="price">
+                                        <span class="before_price sub_t">80,000원</span>
+                                        <span class="hide">에서</span>
+                                        <span class="sale">14%</span>
+                                        <span class="hide">할인</span>
+                                        <span class="after_price">69,000원</span>
+                                    </dd>
+                                    <dd class="locate sub_t">제주시</dd>
+                                    <dd class="review">
+                                        <div class="star_wrap">
+                                            <span class="star_bg">
+                                                <span class="star_fill" style="width: 100%"></span>
+                                            </span>
+                                        </div>
+                                        <span class="hide">별점</span>
+                                        <span class="star_score sub_t">5.0</span>
+                                        <span class="hide">점</span>
+                                        <span class="hide">후기</span>
+                                        <span class="review_number sub_t">7</span>
+                                        <span class="hide">개</span>
+                                    </dd>
+                                </div>
+                            </dl>
+                        </a>
+                        <button type="button" class="btn_wish">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                            </svg>
+                            <span class="hide">찜하기</span>
+                        </button>
+                    </div>
+                    <div class="new_wrap">
+                        <div class="block serv_list" data-category="adroad">
+                            <a href="#none">
+                                <dl>
+                                    <div class="frip_text">
+                                        <dt>
+                                            <div class="img_container"><img src="images/trip_13.jpg" alt=""></div>
+                                            <strong class="frip_subtitle">[프리다이빙+요가] 시키호르 4박 5일 웰니스 트립!</strong>
+                                        </dt>
+                                        <dd class="price">
+                                            <span class="before_price sub_t">1,690,000원</span>
+                                            <span class="hide">에서</span>
+                                            <span class="sale">5%</span>
+                                            <span class="hide">할인</span>
+                                            <span class="after_price">1,600,000원</span>
+                                        </dd>
+                                        <dd class="locate sub_t">필리핀 시키호르</dd>
+                                    </div>
+                                </dl>
+                            </a>
+                            <button type="button" class="btn_wish">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                    <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                </svg>
+                                <span class="hide">찜하기</span>
+                            </button>
+                            <span class="tag_new">신규</span>
+                        </div>
+                    </div>
+                    <div class="block serv_list" data-category="adroad">
+                        <a href="#none">
+                            <dl>
+                                <div class="frip_text">
+                                    <dt>
+                                        <div class="img_container"><img src="images/trip_14.jpg" alt=""></div>
+                                        <strong class="frip_subtitle">[전일정|출발확정] 일본 북알프스 눈꽃 트레킹 4일✈️</strong>
+                                    </dt>
+                                    <dd class="price">
+                                        <span class="before_price sub_t"></span>
+                                        <span class="hide"></span>
+                                        <span class="sale"></span>
+                                        <span class="hide"></span>
+                                        <span class="after_price">1,650,000원</span>
+                                    </dd>
+                                    <dd class="locate sub_t">일본</dd>
+                                    <dd class="review">
+                                        <div class="star_wrap">
+                                            <span class="star_bg">
+                                                <span class="star_fill" style="width: 100%"></span>
+                                            </span>
+                                        </div>
+                                        <span class="hide">별점</span>
+                                        <span class="star_score sub_t">5.0</span>
+                                        <span class="hide">점</span>
+                                        <span class="hide">후기</span>
+                                        <span class="review_number sub_t">25</span>
+                                        <span class="hide">개</span>
+                                    </dd>
+                                </div>
+                            </dl>
+                        </a>
+                        <button type="button" class="btn_wish">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                            </svg>
+                            <span class="hide">찜하기</span>
+                        </button>
+                    </div>
+                    <div class="block serv_list" data-category="jeju">
+                        <a href="#none">
+                            <dl>
+                                <div class="frip_text">
+                                    <dt>
+                                        <div class="img_container"><img src="images/trip_15.jpg" alt=""></div>
+                                        <strong class="frip_subtitle">[제주]제주 서귀포에서 즐기는 천일호 배낚시 체험 2시간 (예약가능)</strong>
+                                    </dt>
+                                    <dd class="price">
+                                        <span class="before_price sub_t">25,000원</span>
+                                        <span class="hide">에서</span>
+                                        <span class="sale">20%</span>
+                                        <span class="hide">할인</span>
+                                        <span class="after_price">20,000원</span>
+                                    </dd>
+                                    <dd class="locate sub_t">서귀포시</dd>
+                                    <dd class="review">
+                                        <div class="star_wrap">
+                                            <span class="star_bg">
+                                                <span class="star_fill" style="width: 94%"></span>
+                                            </span>
+                                        </div>
+                                        <span class="hide">별점</span>
+                                        <span class="star_score sub_t">4.7</span>
+                                        <span class="hide">점</span>
+                                        <span class="hide">후기</span>
+                                        <span class="review_number sub_t">3</span>
+                                        <span class="hide">개</span>
+                                    </dd>
+                                </div>
+                            </dl>
+                        </a>
+                        <button type="button" class="btn_wish">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                            </svg>
+                            <span class="hide">찜하기</span>
+                        </button>
+                    </div>
+                    <div class="block serv_list" data-category="jeju">
+                        <a href="#none">
+                            <dl>
+                                <div class="frip_text">
+                                    <dt>
+                                        <div class="img_container"><img src="images/trip_16.jpg" alt=""></div>
+                                        <strong class="frip_subtitle">[제주] 전통 해녀복 입고 바닷가에서 인생샷 남기기 해녀체험 (예약가능)</strong>
+                                    </dt>
+                                    <dd class="price">
+                                        <span class="before_price sub_t">130,000원</span>
+                                        <span class="hide">에서</span>
+                                        <span class="sale">38%</span>
+                                        <span class="hide">할인</span>
+                                        <span class="after_price">80,000원</span>
+                                    </dd>
+                                    <dd class="locate sub_t">제주시</dd>
+                                    <dd class="review">
+                                        <div class="star_wrap">
+                                            <span class="star_bg">
+                                                <span class="star_fill" style="width: 100%"></span>
+                                            </span>
+                                        </div>
+                                        <span class="hide">별점</span>
+                                        <span class="star_score sub_t">5.0</span>
+                                        <span class="hide">점</span>
+                                        <span class="hide">후기</span>
+                                        <span class="review_number sub_t">2</span>
+                                        <span class="hide">개</span>
+                                    </dd>
+                                </div>
+                            </dl>
+                        </a>
+                        <button type="button" class="btn_wish">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                            </svg>
+                            <span class="hide">찜하기</span>
+                        </button>
+                    </div>
+                    <div class="block serv_list" data-category="jeju">
+                        <a href="#none">
+                            <dl>
+                                <div class="frip_text">
+                                    <dt>
+                                        <div class="img_container"><img src="images/trip_17.jpg" alt=""></div>
+                                        <strong class="frip_subtitle">[최저가] 조용하고 한적한 제주, 워케이션 in 서귀포 힐즈 호텔</strong>
+                                    </dt>
+                                    <dd class="price">
+                                        <span class="before_price sub_t">240,000원</span>
+                                        <span class="hide">에서</span>
+                                        <span class="sale">79%</span>
+                                        <span class="hide">할인</span>
+                                        <span class="after_price">50,000원</span>
+                                    </dd>
+                                    <dd class="locate sub_t">서귀포시</dd>
+                                    <dd class="review">
+                                        <div class="star_wrap">
+                                            <span class="star_bg">
+                                                <span class="star_fill" style="width: 100%"></span>
+                                            </span>
+                                        </div>
+                                        <span class="hide">별점</span>
+                                        <span class="star_score sub_t">5.0</span>
+                                        <span class="hide">점</span>
+                                        <span class="hide">후기</span>
+                                        <span class="review_number sub_t">2</span>
+                                        <span class="hide">개</span>
+                                    </dd>
+                                </div>
+                            </dl>
+                        </a>
+                        <button type="button" class="btn_wish">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                            </svg>
+                            <span class="hide">찜하기</span>
+                        </button>
+                    </div>
+                    <div class="new_wrap">
+                        <div class="block serv_list" data-category="korea">
+                            <a href="#none">
+                                <dl>
+                                    <div class="frip_text">
+                                        <dt>
+                                            <div class="img_container"><img src="images/trip_18.jpg" alt=""></div>
+                                            <strong class="frip_subtitle">유기농 농장 #연잎미나리삼겹살</strong>
+                                        </dt>
+                                        <dd class="price">
+                                            <span class="before_price sub_t"></span>
+                                            <span class="hide"></span>
+                                            <span class="sale"></span>
+                                            <span class="hide"></span>
+                                            <span class="after_price">35,000원</span>
+                                        </dd>
+                                        <dd class="locate sub_t">전라 전체</dd>
+                                    </div>
+                                </dl>
+                            </a>
+                            <button type="button" class="btn_wish">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                    <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                </svg>
+                                <span class="hide">찜하기</span>
+                            </button>
+                            <span class="tag_new">신규</span>
+                        </div>
+                    </div>
+                    <div class="block serv_list" data-category="korea">
+                        <a href="#none">
+                            <dl>
+                                <div class="frip_text">
+                                    <dt>
+                                        <div class="img_container"><img src="images/trip_19.jpg" alt=""></div>
+                                        <strong class="frip_subtitle">수원화성 도보여행/역사/문화탐방 (예약가능)</strong>
+                                    </dt>
+                                    <dd class="price">
+                                        <span class="before_price sub_t"></span>
+                                        <span class="hide"></span>
+                                        <span class="sale"></span>
+                                        <span class="hide"></span>
+                                        <span class="after_price">28,000원</span>
+                                    </dd>
+                                    <dd class="locate sub_t">수원<span class="line"></span>화성</dd>
+                                    <dd class="review">
+                                        <div class="star_wrap">
+                                            <span class="star_bg">
+                                                <span class="star_fill" style="width: 100%"></span>
+                                            </span>
+                                        </div>
+                                        <span class="hide">별점</span>
+                                        <span class="star_score sub_t">5.0</span>
+                                        <span class="hide">점</span>
+                                        <span class="hide">후기</span>
+                                        <span class="review_number sub_t">2</span>
+                                        <span class="hide">개</span>
+                                    </dd>
+                                </div>
+                            </dl>
+                        </a>
+                        <button type="button" class="btn_wish">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                            </svg>
+                            <span class="hide">찜하기</span>
+                        </button>
+                    </div>
+                    <div class="new_wrap">
+                        <div class="block serv_list" data-category="adroad">
+                            <a href="#none">
+                                <dl>
+                                    <div class="frip_text">
+                                        <dt>
+                                            <div class="img_container"><img src="images/trip_20.jpg" alt=""></div>
+                                            <strong class="frip_subtitle">[몽골 현지투어] 너랑나랑 별보러가자 2박 3일 현지투어</strong>
+                                        </dt>
+                                        <dd class="price">
+                                            <span class="before_price sub_t"></span>
+                                            <span class="hide"></span>
+                                            <span class="sale"></span>
+                                            <span class="hide"></span>
+                                            <span class="after_price">459,000원</span>
+                                        </dd>
+                                        <dd class="locate sub_t">몽골</dd>
+                                    </div>
+                                </dl>
+                            </a>
+                            <button type="button" class="btn_wish">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon_heart">
+                                    <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z" />
+                                </svg>
+                                <span class="hide">찜하기</span>
+                            </button>
+                            <span class="tag_new">신규</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <a href="#none" class="first_page disabled">&lt;&lt;</a>
+                    <a href="#none" class="prev_page disabled">&lt;</a>
+
+                    <div class="page_numbers">
+                        <a href="#none" class="page_num active">1</a>
+                        <a href="#none" class="page_num">2</a>
+                        <a href="#none" class="page_num">3</a>
+                        <a href="#none" class="page_num">4</a>
+                        <a href="#none" class="page_num">5</a>
+                        <a href="#none" class="page_num">6</a>
+                        <a href="#none" class="page_num">7</a>
+                        <a href="#none" class="page_num">8</a>
+                        <a href="#none" class="page_num">9</a>
+                        <a href="#none" class="page_num">10</a>
+                    </div>
+
+                    <a href="#none" class="next_page">&gt;&gt;</a>
+                    <a href="#none" class="last_page">&gt;</a>
+                </div>
+            </section>
+
+        </main>
+
+        <div class="footer_wrap">
+            <footer id="footer" class="footer">
+                <h2 class="f_logo">Frientrip</h2> <!--(주) 프렌트립 하단로고-->
+                <h3 class="hide">고객 지원</h3>
+                <div class="supt">
+                    <a href="#none" class="a_click">QnA</a>
+                    <a href="#none" class="a_click">호스트 지원</a>
+                </div>    
+                <h3 class="hide">카카오톡 상담</h3>
+                <div class="kakao">
+                    <div class="kakao_chat">
+                        <a href="#none" class="c_chat"><img src="images/chat_icon.svg" alt="">고객 채팅상담</a>
+                        <a href="#none" class="h_chat"><img src="images/chat_icon.svg" alt="">호스트지원 채팅상담</a>
+                    </div>
+                    <p>운영시간<span class="line"></span>평일 주말 10:00~17:00 (점심 12:00~13:00)</p>
+                </div>
+
+                <div class="f_txt">
+                    <div class="f_txt1">
+                        <p><span class="review_number">주</span>프렌트립<span class="line"></span>대표 임수열<span class="line"></span>개인정보관리책임자 양사열<span class="line"></span>사업자등록번호 261-81-04385<span class="line"></span>통신판매업신고번호 2016-서울성동-01088</p>
+                        <p>주소 서울특별시 성동구 왕십리로 115 헤이그라운드 서울숲점 G704<span class="line"></span>광고 제휴문의 contact@frientrip.com</p>
+                    </div>
+                    <div class="f_txt2">
+                        <p><a href="#none" class="a_click">이용약관</a><span class="line"></span><a href="#none" class="a_click">개인정보 처리방침</a><span class="line"></span><a href="#none" class="a_click">NICEPAY 안전거래 서비스</a></p>
+                        <p><span class="review_number">주</span>프렌트립은 통신판매 중개자로서 거래 당사자가 아니며, 호스트가 등록한 상품정보 및 거래에 대해 <span class="review_number">주</span>프렌트립은 일체의 책임을 지지 않습니다.</p>
+                    </div>
+                </div>
+
+                <h3 class="hide">프립 연결링크</h3>
+                <div class="f_link">
+                    <a href="https://www.instagram.com/frip_korea" class="instagram"><img src="images/instagram.svg" alt="인스타그램"></a>
+                    <a href="https://www.facebook.com/frientrip" class="facebook"><img src="images/facebook.svg" alt="페이스북"></a>
+                    <a href="https://www.youtube.com/channel/UCgYVh2nh8nfC0wHEdkWLLZg?view_as=subscriber" class="youtube"><img src="images/youtube.svg" alt="유튜브"></a>
+                    <span class="f_line"></span>
+                    <a href="https://apps.apple.com/kr/app/%ED%94%84%EB%A6%BD-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-1%EB%93%B1-%EC%B7%A8%EB%AF%B8%EC%97%AC%EA%B0%80-%ED%83%90%EC%83%89-%ED%94%8C%EB%9E%AB%ED%8F%BC/id1066782203"><img src="images/down_apple.svg" alt="IOS 다운"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.frientrip.frip"><img src="images/down_google.svg" alt="안드로이드 다운"></a>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 주변 프립</title>
+    <link rel="preload" href="./fonts/SUIT-Variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/NanumSquareNeo-Variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/basicStyle.css">
+    <link rel="stylesheet" href="css/around.css">
+    <script src="js/jquery-4.0.0.min.js" defer></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=03002e7043fc39c31078534070064643&libraries=services"></script>
+    <script src="js/around.js" defer></script>
+</head>
+<body>
+    <main id="container" class="around_frip">
+        <aside class="side_panel">
+            <div class="panel_logo">
+                <h1 class="frip_logo" onclick="location.href='index.html'">
+                    <img src="images/favicon.svg" alt="Frip"> </h1>
+            </div>
+
+            <div class="panel_header">
+                <h3>내 주변 프립 <span class="point_color">0</span></h3>
+                <select class="sort_select">
+                    <option >필터순</option>
+                    <option>거리순</option>
+                    <option>인기순</option>
+                </select>
+            </div>
+
+            <div class="side_filter_wrap">
+                <button type="button" class="btn_filter_nav prev"></button>
+                <button type="button" class="btn_filter_nav next"></button>
+                <ul class="filter_chips">
+                    <li><button type="button" aria-label="전체" data-category="all" class="active">전체</button></li>
+                    <li><button type="button" aria-label="예술" data-category="art">예술</button></li>
+                    <li><button type="button" aria-label="스포츠" data-category="sports">스포츠</button></li>
+                    <li><button type="button" aria-label="음식" data-category="food">음식</button></li>
+                    <li><button type="button" aria-label="자기계발" data-category="growth">자기계발</button></li>
+                    <li><button type="button" aria-label="모임" data-category="social">모임</button></li>
+                    <li><button type="button" aria-label="여행" data-category="travel">여행</button></li>
+                </ul>
+            </div>
+
+            <div class="scroll_list">
+                <article class="frip_item" data-dist="120" data-star="5.0" data-category="art" data-lat="37.5446" data-lng="127.0567">
+                    <div class="thumb" style="background-image: url(images/art_3.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">예술 · 미술</p>
+                        <h4 class="title">와인 한 잔과 예술 [살롱드톡]</h4>
+                        <div class="meta">
+                            <span class="star">★ 5.0</span>
+                            <span class="dist point">120m</span>
+                        </div>
+                        <p class="price"><strong>28,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="350" data-star="5.0" data-category="art" data-lat="37.5480" data-lng="127.0445">
+                    <div class="thumb" style="background-image: url(images/art_12.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">예술 · 미디어</p>
+                        <h4 class="title">오늘기록) 젊고 찬란한 나를 기록하는 시간 스마트폰사진클래스</h4>
+                        <div class="meta">
+                            <span class="star">★ 5.0</span>
+                            <span class="dist point">350m</span>
+                        </div>
+                        <p class="price"><strong>69,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="1200" data-star="4.9" data-category="art" data-lat="37.5407" data-lng="127.0700"> 
+                    <div class="thumb" style="background-image: url(images/art_18.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">예술 · 미디어</p>
+                        <h4 class="title">하루만에 이모티콘 제작부터 판매</h4>
+                        <div class="meta">
+                            <span class="star">★ 4.9</span>
+                            <span class="dist point">1.2km</span>
+                        </div>
+                        <p class="price"><strong>99,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="1300" data-star="5.0" data-category="food" data-lat="37.5452" data-lng="127.0523">
+                    <div class="thumb" style="background-image: url(images/food_2.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">음식 · 요리</p>
+                        <h4 class="title">퇴근하고, 요리하고, 집밥 먹자! (예약가능)</h4>
+                        <div class="meta">
+                            <span class="star">★ 5.0</span>
+                            <span class="dist point">1.3km</span>
+                        </div>
+                        <p class="price"><strong>79,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="690" data-star="5.0" data-category="food" data-lat="37.5441" data-lng="127.0431">
+                    <div class="thumb" style="background-image: url(images/food_6.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">음식 · 요리</p>
+                        <h4 class="title">[망원] 비건 당근라페 샌드위치 2종 만들기 (떡갈비/사과)</h4>
+                        <div class="meta">
+                            <span class="star">★ 5.0</span>
+                            <span class="dist point">690m</span>
+                        </div>
+                        <p class="price"><strong>69,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="700" data-star="5.0" data-category="food" data-lat="37.5428" data-lng="127.0545">
+                    <div class="thumb" style="background-image: url(images/food_11.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">음식 · 요리</p>
+                        <h4 class="title">강아지 좋은 재료로 착한 간식 만들기 (예약가능)</h4>
+                        <div class="meta">
+                            <span class="star">★ 5.0</span>
+                            <span class="dist point">700m</span>
+                        </div>
+                        <p class="price"><strong>50,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="2300" data-star="5.0" data-category="food" data-lat="37.5315" data-lng="127.0667">
+                    <div class="thumb" style="background-image: url(images/food_12.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">음식 · 요리</p>
+                        <h4 class="title">[진주] 레스토랑급 요리를 직접만들고 촬영까지! (예약가능)</h4>
+                        <div class="meta">
+                            <span class="star">★ 5.0</span>
+                            <span class="dist point">2.3km</span>
+                        </div>
+                        <p class="price"><strong>60,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="7900" data-star="5.0" data-category="food" data-lat="37.5465" data-lng="127.0489">
+                    <div class="thumb" style="background-image: url(images/food_9.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">음식 · 음료</p>
+                        <h4 class="title">[제주] 알레올레 할머니의 차방 (예약가능)</h4>
+                        <div class="meta">
+                            <span class="star">★ 5.0</span>
+                            <span class="dist point">7.9km</span>
+                        </div>
+                        <p class="price"><strong>20,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="4600" data-star="4.9" data-category="sports" data-lat="37.5412" data-lng="127.0582">
+                    <div class="thumb" style="background-image: url(images/sports_top2.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">스포츠 · 수상</p>
+                        <h4 class="title">(해외여행) 거북이와 유영할래? 프리다이빙 체험 강습 받아볼래?</h4>
+                        <div class="meta">
+                            <span class="star">★ 4.9</span>
+                            <span class="dist point">4.6km</span>
+                        </div>
+                        <p class="price"><strong>50,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="500" data-star="4.9" data-category="sports" data-lat="37.5448" data-lng="127.0511">
+                    <div class="thumb" style="background-image: url(images/spt_16.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">스포츠 · 피트니스</p>
+                        <h4 class="title">[1:1] 기구필라테스로 예쁜 몸매 만들기 #개인레슨</h4>
+                        <div class="meta">
+                            <span class="star">★ 4.9</span>
+                            <span class="dist point">500m</span>
+                        </div>
+                        <p class="price"><strong>60,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="1900" data-star="5.0" data-category="growth" data-lat="37.5478" data-lng="127.0412">
+                    <div class="thumb" style="background-image: url(images/self_7.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">자기계발 · 학습</p>
+                        <h4 class="title">부동산 경매 왕초보 2시간 만에 탈출하기!!!</h4>
+                        <div class="meta">
+                            <span class="star">★ 5.0</span>
+                            <span class="dist point">1.9km</span>
+                        </div>
+                        <p class="price"><strong>50,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="800" data-star="5.0" data-category="growth" data-lat="37.5431" data-lng="127.0501">
+                    <div class="thumb" style="background-image: url(images/self_11.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">자기계발 · 뷰티</p>
+                        <h4 class="title">홍대피부)나만 위한 컨설팅 + 55분 내 피부 맞춤케어</h4>
+                        <div class="meta">
+                            <span class="star">★ 5.0</span>
+                            <span class="dist point">800m</span>
+                        </div>
+                        <p class="price"><strong>60,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="400" data-star="4.9" data-category="art" data-lat="37.5401" data-lng="127.0695">
+                    <div class="thumb" style="background-image: url(images/art_19.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">예술 · 공연</p>
+                        <h4 class="title">주1회(총4회) 누구나 부담 없이 쉽고 재밌는 취미 카메라연기 함께해요</h4>
+                        <div class="meta">
+                            <span class="star">★ 4.9</span>
+                            <span class="dist point">400m</span>
+                        </div>
+                        <p class="price"><strong>150,000원</strong></p>
+                    </div>
+                </article>
+            
+                <article class="frip_item" data-dist="200" data-star="4.9" data-category="art" data-lat="37.3925" data-lng="127.1110">
+                    <div class="thumb" style="background-image: url(images/around_1.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">예술 · 공연</p>
+                        <h4 class="title">[판교] 직장인 힐링, 퇴근 후 즐기는 수채화 원데이 클래스</h4>
+                        <div class="meta">
+                            <span class="star">★ 4.9</span>
+                            <span class="dist point">200m</span>
+                        </div>
+                        <p class="price"><strong>35,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="800" data-star="5.0" data-category="sports" data-lat="37.4020" data-lng="127.1035">
+                    <div class="thumb" style="background-image: url(images/around_2.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">아웃도어 · 스포츠</p>
+                        <h4 class="title">IT 직장인 필수! 거북목 탈출 필라테스 & 체형 교정</h4>
+                        <div class="meta">
+                            <span class="star">★ 5.0</span>
+                            <span class="dist point">800m</span>
+                        </div>
+                        <p class="price"><strong>25,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="1200" data-star="4.8" data-category="art" data-lat="37.3875" data-lng="127.1150">
+                    <div class="thumb" style="background-image: url(images/around_3.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">예술 · 공연</p>
+                        <h4 class="title">백현동 감성 공방에서 만드는 나만의 실버 링 제작</h4>
+                        <div class="meta">
+                            <span class="star">★ 4.8</span>
+                            <span class="dist point">1.2km</span>
+                        </div>
+                        <p class="price"><strong>55,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="3500" data-star="4.7" data-category="art" data-lat="37.3605" data-lng="127.1115">
+                    <div class="thumb" style="background-image: url(images/around_4.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">예술 · 공연</p>
+                        <h4 class="title">정자동 로드 감성, 전문 조향사와 함께하는 향수 클래스</h4>
+                        <div class="meta">
+                            <span class="star">★ 4.7</span>
+                            <span class="dist point">3.5km</span>
+                        </div>
+                        <p class="price"><strong>48,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="1500" data-star="4.8" data-category="sports" data-lat="37.3845" data-lng="127.1235">
+                    <div class="thumb" style="background-image: url(images/around_5.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">아웃도어 · 스포츠</p>
+                        <h4 class="title">전신 근력 강화! 분당 서현 실내 클라이밍 비기너 레슨</h4>
+                        <div class="meta">
+                            <span class="star">★ 4.8</span>
+                            <span class="dist point">1.5km</span>
+                        </div>
+                        <p class="price"><strong>30,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="4000" data-star="4.9" data-category="sports" data-lat="37.3780" data-lng="127.1470">
+                    <div class="thumb" style="background-image: url(images/around_6.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">아웃도어 · 스포츠</p>
+                        <h4 class="title">율동공원 호수 뷰 선셋 노르딕 워킹 & 명상 산책</h4>
+                        <div class="meta">
+                            <span class="star">★ 4.9</span>
+                            <span class="dist point">4.0km</span>
+                        </div>
+                        <p class="price"><strong>20,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="2800" data-star="4.6" data-category="art" data-lat="37.4115" data-lng="127.1285">
+                    <div class="thumb" style="background-image: url(images/around_7.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">예술 · 공연</p>
+                        <h4 class="title">야탑 홈베이킹 스튜디오 - 쫀득한 르뱅쿠키 마스터</h4>
+                        <div class="meta">
+                            <span class="star">★ 4.6</span>
+                            <span class="dist point">2.8km</span>
+                        </div>
+                        <p class="price"><strong>42,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="100" data-star="4.9" data-category="art" data-lat="37.4375" data-lng="127.1410">
+                    <div class="thumb" style="background-image: url(images/around_8.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">예술 · 공연</p>
+                        <h4 class="title">[수진] 퇴근길 소확행, 1시간 완성 아크릴화 원데이 클래스</h4>
+                        <div class="meta">
+                            <span class="star">★ 4.9</span>
+                            <span class="dist point">100m</span>
+                        </div>
+                        <p class="price"><strong>29,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="5200" data-star="4.7" data-category="art" data-lat="37.4330" data-lng="127.1290">
+                    <div class="thumb" style="background-image: url(images/around_9.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">예술 · 공연</p>
+                        <h4 class="title">모란 마켓 투어 & 전통 재료로 만드는 한식 쿠킹 클래스</h4>
+                        <div class="meta">
+                            <span class="star">★ 4.7</span>
+                            <span class="dist point">5.2km</span>
+                        </div>
+                        <p class="price"><strong>50,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="2100" data-star="5.0" data-category="sports" data-lat="37.3750" data-lng="127.1120">
+                    <div class="thumb" style="background-image: url(images/around_10.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">아웃도어 · 스포츠</p>
+                        <h4 class="title">탄천 바람을 가르며! 함께 뛰는 화요 야간 러닝 크루</h4>
+                        <div class="meta">
+                            <span class="star">★ 5.0</span>
+                            <span class="dist point">2.1km</span>
+                        </div>
+                        <p class="price"><strong>무료</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="300" data-star="4.9" data-category="art" data-lat="37.4415" data-lng="127.1340">
+                    <div class="thumb" style="background-image: url(images/around_11.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">예술 · 공연</p>
+                        <h4 class="title">[수정로] 감성 가득, 나만의 터프팅 미니 거울 만들기</h4>
+                        <div class="meta">
+                            <span class="star">★ 4.9</span>
+                            <span class="dist point">300m</span>
+                        </div>
+                        <p class="price"><strong>45,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="150" data-star="4.8" data-category="sports" data-lat="37.4445" data-lng="127.1275">
+                    <div class="thumb" style="background-image: url(images/around_12.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">아웃도어 · 피트니스</p>
+                        <h4 class="title">[번지피트니스] 위니와 함께하는 위닝클래스</h4>
+                        <div class="meta">
+                            <span class="star">★ 4.8</span>
+                            <span class="dist point">150m</span>
+                        </div>
+                        <p class="price"><strong>28,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="600" data-star="4.7" data-category="art" data-lat="37.4410" data-lng="127.1415">
+                    <div class="thumb" style="background-image: url(images/around_13.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">예술 · 공연</p>
+                        <h4 class="title">조용한 골목 안, 직접 볶은 원두로 즐기는 핸드드립 클래스</h4>
+                        <div class="meta">
+                            <span class="star">★ 4.7</span>
+                            <span class="dist point">600m</span>
+                        </div>
+                        <p class="price"><strong>20,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="2500" data-star="5.0" data-category="sports" data-lat="37.4525" data-lng="127.1270">
+                    <div class="thumb" style="background-image: url(images/around_14.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">아웃도어 · 스포츠</p>
+                        <h4 class="title">대학생 인기! 가천대역 테니스 비기너 집중 레슨</h4>
+                        <div class="meta">
+                            <span class="star">★ 5.0</span>
+                            <span class="dist point">2.5km</span>
+                        </div>
+                        <p class="price"><strong>35,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="5200" data-star="4.9" data-category="art" data-lat="37.3970" data-lng="127.1105">
+                    <div class="thumb" style="background-image: url(images/around_15.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">예술 · 공연</p>
+                        <h4 class="title">[판교] 프리미엄 조향 클래스: 나만의 니치 향수 만들기</h4>
+                        <div class="meta">
+                            <span class="star">★ 4.9</span>
+                            <span class="dist point">5.2km</span>
+                        </div>
+                        <p class="price"><strong>60,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="1800" data-star="4.7" data-category="sports" data-lat="37.4320" data-lng="127.1295">
+                    <div class="thumb" style="background-image: url(images/around_16.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">아웃도어 · 스포츠</p>
+                        <h4 class="title">모란 종합운동장 근처 스쿼시 원데이 클래스</h4>
+                        <div class="meta">
+                            <span class="star">★ 4.7</span>
+                            <span class="dist point">1.8km</span>
+                        </div>
+                        <p class="price"><strong>25,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="7500" data-star="5.0" data-category="art" data-lat="37.3595" data-lng="127.1085">
+                    <div class="thumb" style="background-image: url(images/around_17.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">예술 · 공연</p>
+                        <h4 class="title">정자동 카페거리 플라워 원데이: 유러피안 핸드타이드</h4>
+                        <div class="meta">
+                            <span class="star">★ 5.0</span>
+                            <span class="dist point">7.5km</span>
+                        </div>
+                        <p class="price"><strong>55,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="3800" data-star="4.9" data-category="sports" data-lat="37.4705" data-lng="127.1265">
+                    <div class="thumb" style="background-image: url(images/around_18.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">아웃도어 · 스포츠</p>
+                        <h4 class="title">복정 습지생태원 산책하며 배우는 스마트폰 풍경 사진</h4>
+                        <div class="meta">
+                            <span class="star">★ 4.9</span>
+                            <span class="dist point">3.8km</span>
+                        </div>
+                        <p class="price"><strong>15,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="250" data-star="4.9" data-category="art" data-lat="37.4420" data-lng="127.1330">
+                    <div class="thumb" style="background-image: url(images/around_19.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">예술 · 공연</p>
+                        <h4 class="title">[수진] 나만의 작은 정원, 테라리움 만들기 클래스</h4>
+                        <div class="meta"><span class="star">★ 4.9</span><span class="dist point">250m</span></div>
+                        <p class="price"><strong>32,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="500" data-star="4.7" data-category="sports" data-lat="37.4435" data-lng="127.1305">
+                    <div class="thumb" style="background-image: url(images/around_20.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">아웃도어 · 스포츠</p>
+                        <h4 class="title">태평동 골목 안 숨은 요가원: 인요가 & 명상</h4>
+                        <div class="meta"><span class="star">★ 4.7</span><span class="dist point">500m</span></div>
+                        <p class="price"><strong>18,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="350" data-star="4.8" data-category="art" data-lat="37.4395" data-lng="127.1380">
+                    <div class="thumb" style="background-image: url(images/around_21.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">예술 · 공연</p>
+                        <h4 class="title">세상에 하나뿐인 커스텀 폰케이스 레진 아트</h4>
+                        <div class="meta"><span class="star">★ 4.8</span><span class="dist point">350m</span></div>
+                        <p class="price"><strong>25,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="5500" data-star="5.0" data-category="sports" data-lat="37.3940" data-lng="127.1110">
+                    <div class="thumb" style="background-image: url(images/around_22.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">아웃도어 · 스포츠</p>
+                        <h4 class="title">[판교] 테크노밸리 직장인 저녁 러닝 크루</h4>
+                        <div class="meta"><span class="star">★ 5.0</span><span class="dist point">5.5km</span></div>
+                        <p class="price"><strong>무료</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="7200" data-star="4.6" data-category="art" data-lat="37.3650" data-lng="127.1070">
+                    <div class="thumb" style="background-image: url(images/around_23.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">예술 · 공연</p>
+                        <h4 class="title">정자동 미켈란쉐르빌 화실: 유화 기초 클래스</h4>
+                        <div class="meta"><span class="star">★ 4.6</span><span class="dist point">7.2km</span></div>
+                        <p class="price"><strong>45,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="4200" data-star="4.8" data-category="sports" data-lat="37.4610" data-lng="127.1450">
+                    <div class="thumb" style="background-image: url(images/around_24.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">아웃도어 · 스포츠</p>
+                        <h4 class="title">위례 스타필드 근처 실내 골프 원 포인트 레슨</h4>
+                        <div class="meta"><span class="star">★ 4.8</span><span class="dist point">4.2km</span></div>
+                        <p class="price"><strong>40,000원</strong></p>
+                    </div>
+                </article>
+
+                <article class="frip_item" data-dist="5200" data-star="4.8" data-category="food" data-lat="37.3950" data-lng="127.1115">
+                    <div class="thumb" style="background-image: url(images/around_25.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">음식 · 주류</p>
+                        <h4 class="title">[판교] 와인 초보를 위한 테이스팅 & 페어링 입문</h4>
+                        <div class="meta"><span class="star">★ 4.8</span><span class="dist point">5.2km</span></div>
+                        <p class="price"><strong>59,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="1500" data-star="4.7" data-category="growth" data-lat="37.4520" data-lng="127.1280">
+                    <div class="thumb" style="background-image: url(images/around_26.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">자기계발</p>
+                        <h4 class="title">가천대역 인근 스터디룸: 기초 비즈니스 영어 회화</h4>
+                        <div class="meta"><span class="star">★ 4.7</span><span class="dist point">1.5km</span></div>
+                        <p class="price"><strong>20,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="800" data-star="4.8" data-category="social" data-lat="37.4330" data-lng="127.1440">
+                    <div class="thumb" style="background-image: url(images/around_27.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">모임</p>
+                        <h4 class="title">성남종합운동장 산책하며 나누는 주말 독서 모임</h4>
+                        <div class="meta"><span class="star">★ 4.8</span><span class="dist point">800m</span></div>
+                        <p class="price"><strong>10,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="7500" data-star="4.9" data-category="social" data-lat="37.3880" data-lng="127.1220">
+                    <div class="thumb" style="background-image: url(images/around_28.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">모임</p>
+                        <h4 class="title">[분당] 서현역 인근 보드게임 & 소셜 파티</h4>
+                        <div class="meta"><span class="star">★ 4.9</span><span class="dist point">7.5km</span></div>
+                        <p class="price"><strong>15,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="3200" data-star="5.0" data-category="travel" data-lat="37.4585" data-lng="127.1780">
+                    <div class="thumb" style="background-image: url(images/around_29.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">여행</p>
+                        <h4 class="title">남한산성 로컬 가이드와 함께하는 성곽 야경 투어</h4>
+                        <div class="meta"><span class="star">★ 5.0</span><span class="dist point">3.2km</span></div>
+                        <p class="price"><strong>25,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="15000" data-star="4.8" data-category="travel" data-lat="37.5665" data-lng="126.9780">
+                    <div class="thumb" style="background-image: url(images/around_30.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">여행</p>
+                        <h4 class="title">[서울] 경복궁 한복 출사 & 고궁 역사 여행</h4>
+                        <div class="meta"><span class="star">★ 4.8</span><span class="dist point">15km</span></div>
+                        <p class="price"><strong>30,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="150" data-star="4.6" data-category="food" data-lat="37.4442" data-lng="127.1285">
+                    <div class="thumb" style="background-image: url(images/around_31.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">음식 · 주류</p>
+                        <h4 class="title">태평역 숨은 맛집 투어: 로컬 푸드 시식 모임</h4>
+                        <div class="meta"><span class="star">★ 4.6</span><span class="dist point">150m</span></div>
+                        <p class="price"><strong>20,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="9000" data-star="4.9" data-category="growth" data-lat="37.5020" data-lng="127.0250">
+                    <div class="thumb" style="background-image: url(images/around_32.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">자기계발</p>
+                        <h4 class="title">강남역 인근: 3시간 만에 끝내는 PPT 디자인 스킬</h4>
+                        <div class="meta"><span class="star">★ 4.9</span><span class="dist point">9.0km</span></div>
+                        <p class="price"><strong>45,000원</strong></p>
+                    </div>
+                </article>
+                <article class="frip_item" data-dist="4500" data-star="4.7" data-category="social" data-lat="37.4650" data-lng="127.1400">
+                    <div class="thumb" style="background-image: url(images/around_33.jpg);"></div>
+                    <div class="info">
+                        <p class="cate">모임</p>
+                        <h4 class="title">위례 주민들을 위한 반려견 산책 친구 만들기</h4>
+                        <div class="meta"><span class="star">★ 4.7</span><span class="dist point">4.5km</span></div>
+                        <p class="price"><strong>무료</strong></p>
+                    </div>
+                </article>
+            </div>
+        </aside>
+
+        <section class="map_view_contents">
+            <div class="map_search_overlay">
+                <div class="search_box_refined">
+                    <form name="mapSearchForm">
+                        <input type="text" id="map_search" placeholder="지역이나 프립을 검색해보세요!">
+                        <button type="button" class="btn_search_refined">검색</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="map_area">
+                <div id="map"></div>
+                <div class="map_btns">
+                    <button type="button" class="btn_re_search">이 지역 재검색</button>
+                    <button type="button" class="btn_my_loc">📍</button>
+                    <button type="button" class="btn_go_footer" id="go_footer" title="하단으로 이동">
+                        <span class="arrow">↓</span>
+                        <span class="txt">FOOTER</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer_wrap">
+        <footer id="footer" class="footer">
+            <h2 class="f_logo">Frientrip</h2>
+            <h3 class="hide">고객 지원</h3>
+            <div class="supt">
+                <a href="#none" class="a_click">QnA</a>
+                <a href="#none" class="a_click">호스트 지원</a>
+            </div>    
+            <h3 class="hide">카카오톡 상담</h3>
+            <div class="kakao">
+                <div class="kakao_chat">
+                    <a href="#none" class="c_chat"><img src="images/chat_icon.svg" alt="">고객 채팅상담</a>
+                    <a href="#none" class="h_chat"><img src="images/chat_icon.svg" alt="">호스트지원 채팅상담</a>
+                </div>
+                <p>운영시간<span class="line"></span>평일 주말 10:00~17:00 (점심 12:00~13:00)</p>
+            </div>
+
+            <div class="f_txt">
+                <div class="f_txt1">
+                    <p><span class="review_number">주</span>프렌트립<span class="line"></span>대표 임수열<span class="line"></span>개인정보관리책임자 양사열<span class="line"></span>사업자등록번호 261-81-04385<span class="line"></span>통신판매업신고번호 2016-서울성동-01088</p>
+                    <p>주소 서울특별시 성동구 왕십리로 115 헤이그라운드 서울숲점 G704<span class="line"></span>광고 제휴문의 contact@frientrip.com</p>
+                </div>
+                <div class="f_txt2">
+                    <p><a href="#none" class="a_click">이용약관</a><span class="line"></span><a href="#none" class="a_click">개인정보 처리방침</a><span class="line"></span><a href="#none" class="a_click">NICEPAY 안전거래 서비스</a></p>
+                    <p><span class="review_number">주</span>프렌트립은 통신판매 중개자로서 거래 당사자가 아니며, 호스트가 등록한 상품정보 및 거래에 대해 <span class="review_number">주</span>프렌트립은 일체의 책임을 지지 않습니다.</p>
+                </div>
+            </div>
+
+            <h3 class="hide">프립 연결링크</h3>
+            <div class="f_link">
+                <a href="https://www.instagram.com/frip_korea" class="instagram"><img src="images/instagram.svg" alt="인스타그램"></a>
+                <a href="https://www.facebook.com/frientrip" class="facebook"><img src="images/facebook.svg" alt="페이스북"></a>
+                <a href="https://www.youtube.com/channel/UCgYVh2nh8nfC0wHEdkWLLZg?view_as=subscriber" class="youtube"><img src="images/youtube.svg" alt="유튜브"></a>
+                <span class="f_line"></span>
+                <a href="https://apps.apple.com/kr/app/%ED%94%84%EB%A6%BD-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-1%EB%93%B1-%EC%B7%A8%EB%AF%B8%EC%97%AC%EA%B0%80-%ED%83%90%EC%83%89-%ED%94%8C%EB%9E%AB%ED%8F%BC/id1066782203"><img src="images/down_apple.svg" alt="IOS 다운"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.frientrip.frip"><img src="images/down_google.svg" alt="안드로이드 다운"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

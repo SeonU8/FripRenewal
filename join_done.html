@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입_가입완료</title>
+    <link rel="preload" href="./fonts/SUIT-Variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/NanumSquareNeo-Variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/basicStyle.css">
+    <link rel="stylesheet" href="css/joinDonePage.css">
+    <script src="js/jquery-4.0.0.min.js" defer></script>
+    <script src="js/header.js" defer></script>
+</head>
+<body>
+    <div class="wrap">
+        <header id="header" class="header">
+            <div class="gnb_bg"><div class="bg_line"></div></div>
+            <div class="gnb_wrap">
+                <h1 class="logo"><a href="index.html"><img src="images/logo.svg" alt="FRIP"></a></h1>
+
+                <nav id="gnb" class="gnb">
+                    <span class="gnb_hover_pad"></span>
+                    <h2 class="hide">주요 메뉴</h2>
+                    <ul class="gnb_1depth">
+                        <li class="art"><a href="dep1_art.html">예술</a>
+                            <ul class="gnb_2depth">
+                                <li class="paint"><a href="painting.html">미술</a></li>
+                                <li class="craft"><a href="craft.html">공예</a></li>
+                                <li class="media"><a href="media.html">미디어</a></li>
+                                <li class="stage"><a href="performance.html">공연</a></li>
+                                <li class="literature"><a href="literature.html">문학</a></li>
+                            </ul>
+                        </li>
+                        <li class="sport"><a href="dep1_sports.html">스포츠</a>
+                            <ul class="gnb_2depth">
+                                <li class="fitness"><a href="fitness.html">피트니스</a></li>
+                                <li class="ball"><a href="ball.html">구기</a></li>
+                                <li class="combat"><a href="cambat.html">격투</a></li>
+                                <li class="outdoor"><a href="outdoor.html">아웃도어</a></li>
+                                <li class="water"><a href="water.html">수상</a></li>
+                            </ul>
+                        </li>
+                        <li class="food"><a href="dep1_food.html">음식</a>
+                            <ul class="gnb_2depth">
+                                <li class="cook"><a href="cooking.html">요리</a></li>
+                                <li class="baking"><a href="baking.html">베이킹</a></li>
+                                <li class="cafe"><a href="drink.html">음료</a></li>
+                                <li class="gourmet"><a href="gourmet.html">미식</a></li>
+                            </ul>
+                        </li>
+                        <li class="selfdev"><a href="dep1_growth.html">자기계발</a>
+                            <ul class="gnb_2depth">
+                                <li class="mind"><a href="mind.html">마인드</a></li>
+                                <li class="learn"><a href="learning.html">학습</a></li>
+                                <li class="career"><a href="career.html">커리어</a></li>
+                                <li class="comm"><a href="comm.html">커뮤니케이션</a></li>
+                                <li class="beauty"><a href="beauty.html">뷰티</a></li>
+                            </ul>
+                        </li>
+                        <li class="meet"><a href="dep1_social.html">모임</a>
+                            <ul class="gnb_2depth">
+                                <li class="club"><a href="meeting.html">만남</a></li>
+                                <li class="taste"><a href="culture.html">문화예술</a></li>
+                                <li class="study"><a href="study.html">스터디</a></li>
+                            </ul>
+                        </li>
+                        <li class="online"><a href="dep1_online.html">온라인</a>
+                            <ul class="gnb_2depth">
+                                <li class="live"><a href="online.html">라이브</a></li>
+                                <li class="class"><a href="class.html">클래스</a></li>
+                                <li class="challenge"><a href="challenge.html">챌린지</a></li>
+                            </ul>
+                        </li>
+                        <li class="trip"><a href="dep1_travel.html">여행</a>
+                            <ul class="gnb_2depth">
+                                <li class="local"><a href="korea.html">국내여행</a></li>
+                                <li class="global"><a href="jeju.html">제주여행</a></li>
+                                <li class="global"><a href="adroad.html">해외여행</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="top_menu">
+                    <div class="host">
+                        <h2 class="hide">사용자 메뉴</h2>
+                        <a href="host.html">호스트 지원</a>
+                    </div>
+
+                    <div class="util">
+                        <h2 class="hide">유틸메뉴</h2>
+                        <ul>
+                            <li class="like"><a href="like.html"><img src="images/like.svg" alt="찜"></a></li>
+                            <li class="notice"><a href="notice.html"><img src="images/notice.svg" alt="공지사항"></a></li>
+                            <li class="my">
+                                <a href="#" class="mypage-btn">
+                                    <img src="images/my.svg" alt="My">
+                                    <span class="user_name"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main id="main" class="main">
+            <section class="join done_page">
+                <h2>반가워요!</h2>
+                <p>이제 프립과 함께 일상을 즐거움으로 채워보세요.</p>
+                <div class="join_step">
+                    <h3 class="hide">회원가입 진행 단계</h3>
+                    <ul>
+                        <li class="step_verify">
+                            <img src="images/verify_d.svg" alt="">
+                            <span>본인인증</span>
+                        </li>
+                        <li class="step_profile">
+                            <img src="images/profile_d.svg" alt="">
+                            <span>정보입력</span>
+                        </li>
+                        <li class="step_done">
+                            <img src="images/join_c.svg" alt="">
+                            <span>가입완료</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <a href="index.html" class="go_home">홈으로</a>
+        </main>
+
+        <div class="footer_wrap">
+            <footer id="footer" class="footer">
+                <h2 class="f_logo">Frientrip</h2>
+                <h3 class="hide">고객 지원</h3>
+                <div class="supt">
+                    <a href="#none" class="a_click">QnA</a>
+                    <a href="#none" class="a_click">호스트 지원</a>
+                </div>    
+                <h3 class="hide">카카오톡 상담</h3>
+                <div class="kakao">
+                    <div class="kakao_chat">
+                        <a href="#none" class="c_chat"><img src="images/chat_icon.svg" alt="">고객 채팅상담</a>
+                        <a href="#none" class="h_chat"><img src="images/chat_icon.svg" alt="">호스트지원 채팅상담</a>
+                    </div>
+                    <p>운영시간<span class="line"></span>평일 주말 10:00~17:00 (점심 12:00~13:00)</p>
+                </div>
+
+                <div class="f_txt">
+                    <div class="f_txt1">
+                        <p><span class="review_number">주</span>프렌트립<span class="line"></span>대표 임수열<span class="line"></span>개인정보관리책임자 양사열<span class="line"></span>사업자등록번호 261-81-04385<span class="line"></span>통신판매업신고번호 2016-서울성동-01088</p>
+                        <p>주소 서울특별시 성동구 왕십리로 115 헤이그라운드 서울숲점 G704<span class="line"></span>광고 제휴문의 contact@frientrip.com</p>
+                    </div>
+                    <div class="f_txt2">
+                        <p><a href="#none" class="a_click">이용약관</a><span class="line"></span><a href="#none" class="a_click">개인정보 처리방침</a><span class="line"></span><a href="#none" class="a_click">NICEPAY 안전거래 서비스</a></p>
+                        <p><span class="review_number">주</span>프렌트립은 통신판매 중개자로서 거래 당사자가 아니며, 호스트가 등록한 상품정보 및 거래에 대해 <span class="review_number">주</span>프렌트립은 일체의 책임을 지지 않습니다.</p>
+                    </div>
+                </div>
+
+                <h3 class="hide">프립 연결링크</h3>
+                <div class="f_link">
+                    <a href="https://www.instagram.com/frip_korea" class="instagram"><img src="images/instagram.svg" alt="인스타그램"></a>
+                    <a href="https://www.facebook.com/frientrip" class="facebook"><img src="images/facebook.svg" alt="페이스북"></a>
+                    <a href="https://www.youtube.com/channel/UCgYVh2nh8nfC0wHEdkWLLZg?view_as=subscriber" class="youtube"><img src="images/youtube.svg" alt="유튜브"></a>
+                    <span class="f_line"></span>
+                    <a href="https://apps.apple.com/kr/app/%ED%94%84%EB%A6%BD-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-1%EB%93%B1-%EC%B7%A8%EB%AF%B8%EC%97%AC%EA%B0%80-%ED%83%90%EC%83%89-%ED%94%8C%EB%9E%AB%ED%8F%BC/id1066782203"><img src="images/down_apple.svg" alt="IOS 다운"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.frientrip.frip"><img src="images/down_google.svg" alt="안드로이드 다운"></a>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

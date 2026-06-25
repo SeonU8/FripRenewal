@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
+    <link rel="preload" href="./fonts/SUIT-Variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/NanumSquareNeo-Variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/basicStyle.css">
+    <link rel="stylesheet" href="css/noticePage.css">
+    <script src="js/jquery-4.0.0.min.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/noticePage.js" defer></script>
+</head>
+<body>
+    <div class="wrap">
+        <header id="header" class="header">
+            <div class="gnb_bg"><div class="bg_line"></div></div>
+            <div class="gnb_wrap">
+                <h1 class="logo"><a href="index.html"><img src="images/logo.svg" alt="FRIP"></a></h1>
+
+                <nav id="gnb" class="gnb">
+                    <span class="gnb_hover_pad"></span>
+                    <h2 class="hide">주요 메뉴</h2>
+                    <ul class="gnb_1depth">
+                        <li class="art"><a href="dep1_art.html">예술</a>
+                            <ul class="gnb_2depth">
+                                <li class="paint"><a href="painting.html">미술</a></li>
+                                <li class="craft"><a href="craft.html">공예</a></li>
+                                <li class="media"><a href="media.html">미디어</a></li>
+                                <li class="stage"><a href="performance.html">공연</a></li>
+                                <li class="literature"><a href="literature.html">문학</a></li>
+                            </ul>
+                        </li>
+                        <li class="sport"><a href="dep1_sports.html">스포츠</a>
+                            <ul class="gnb_2depth">
+                                <li class="fitness"><a href="fitness.html">피트니스</a></li>
+                                <li class="ball"><a href="ball.html">구기</a></li>
+                                <li class="combat"><a href="cambat.html">격투</a></li>
+                                <li class="outdoor"><a href="outdoor.html">아웃도어</a></li>
+                                <li class="water"><a href="water.html">수상</a></li>
+                            </ul>
+                        </li>
+                        <li class="food"><a href="dep1_food.html">음식</a>
+                            <ul class="gnb_2depth">
+                                <li class="cook"><a href="cooking.html">요리</a></li>
+                                <li class="baking"><a href="baking.html">베이킹</a></li>
+                                <li class="cafe"><a href="drink.html">음료</a></li>
+                                <li class="gourmet"><a href="gourmet.html">미식</a></li>
+                            </ul>
+                        </li>
+                        <li class="selfdev"><a href="dep1_growth.html">자기계발</a>
+                            <ul class="gnb_2depth">
+                                <li class="mind"><a href="mind.html">마인드</a></li>
+                                <li class="learn"><a href="learning.html">학습</a></li>
+                                <li class="career"><a href="career.html">커리어</a></li>
+                                <li class="comm"><a href="comm.html">커뮤니케이션</a></li>
+                                <li class="beauty"><a href="beauty.html">뷰티</a></li>
+                            </ul>
+                        </li>
+                        <li class="meet"><a href="dep1_social.html">모임</a>
+                            <ul class="gnb_2depth">
+                                <li class="club"><a href="meeting.html">만남</a></li>
+                                <li class="taste"><a href="culture.html">문화예술</a></li>
+                                <li class="study"><a href="study.html">스터디</a></li>
+                            </ul>
+                        </li>
+                        <li class="online"><a href="dep1_online.html">온라인</a>
+                            <ul class="gnb_2depth">
+                                <li class="live"><a href="online.html">라이브</a></li>
+                                <li class="class"><a href="class.html">클래스</a></li>
+                                <li class="challenge"><a href="challenge.html">챌린지</a></li>
+                            </ul>
+                        </li>
+                        <li class="trip"><a href="dep1_travel.html">여행</a>
+                            <ul class="gnb_2depth">
+                                <li class="local"><a href="korea.html">국내여행</a></li>
+                                <li class="global"><a href="jeju.html">제주여행</a></li>
+                                <li class="global"><a href="adroad.html">해외여행</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="top_menu">
+                    <div class="host">
+                        <h2 class="hide">사용자 메뉴</h2>
+                        <a href="host.html">호스트 지원</a>
+                    </div>
+
+                    <div class="util">
+                        <h2 class="hide">유틸메뉴</h2>
+                        <ul>
+                            <li class="like"><a href="like.html"><img src="images/like.svg" alt="찜"></a></li>
+                            <li class="notice"><a href="notice.html"><img src="images/notice.svg" alt="공지사항"></a></li>
+                            <li class="my">
+                                <a href="#" class="mypage-btn">
+                                    <img src="images/my.svg" alt="My">
+                                    <span class="user_name"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main id="main" class="main">
+            <section class="notice_wrap">
+                <div class="inner">
+                    <h2>공지사항</h2>
+
+                    <div class="tab_menu">
+                        <button type="button" class="active">전체</button>
+                        <button type="button">공지</button>
+                        <button type="button">이벤트</button>
+                    </div>
+
+                    <ul class="notice_list">
+                        <li class="notice_item" data-category="notice">
+                            <div class="notice_header">
+                                <span class="badge notice">공지</span>
+                                <strong class="title">설 연휴 기간 (2/16~2/17) 고객센터 휴무 안내</strong>
+                                <span class="date">26-02-09 14:31</span>
+                                <i class="arrow_icon"></i>
+                            </div>
+                            <div class="notice_content">
+                                <div class="content_inner">
+                                    안녕하세요. 크루님<br>
+                                    프립입니다.<br><br>
+
+                                    2026년 병오년(丙午年) 새해 복 많이 받으세요😊<br>
+                                    프립과 함께 탐험해주신 크루님께 진심으로 감사드리며,<br>
+                                    설 연휴로 인한 고객센터 휴무 안내드립니다.<br><br>
+
+                                    <strong>[ 고객센터 휴무 안내 ]</strong><br>
+                                    - 2/16(월) ~2/17(화) : 설날 연휴<br>
+                                    ※ 연휴 기간 중 2월 18일(수)에는 정상 운영됩니다.<br><br>
+
+                                    주말 및 휴무 동안 진행하는 프립에 대해서는 해당 상품의 호스트님과 소통하실 수 있으며,<br>
+                                    프립(카카오톡 채널 @프립)에 남겨주신 문의사항에 대해서는 18일부터 순차적으로 처리될 예정입니다만<br>
+                                    문의량이 너무 많을 경우 답변까지 시간이 지체될 수 있는 점 너그러운 양해를 부탁드립니다.<br>
+                                    최대한 빠르게 답변 드릴 수 있도록 노력하겠습니다.<br><br>
+
+                                    감사합니다.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notice_item" data-category="notice">
+                            <div class="notice_header">
+                                <span class="badge notice">공지</span>
+                                <strong class="title">신정(1/1) 고객센터 휴무 안내</strong>
+                                <span class="date">25-12-26 13:08</span>
+                                <i class="arrow_icon"></i>
+                            </div>
+                            <div class="notice_content">
+                                <div class="content_inner">
+                                    안녕하세요. 크루님 :-)<br>
+                                    프립입니다.<br><br>
+
+                                    1월 1일 신정의 인한 고객센터 휴무 안내드립니다.<br><br>
+
+                                    <strong>[ 고객센터 휴무 안내 ]</strong><br>
+                                    - 일자 : 1월 1일 (목)<br><br>
+
+                                    휴무 동안 진행하는 프립에 대해서는 해당 상품의 호스트님과 소통하실 수 있으며,<br>
+                                    프립(카카오톡 채널 @프립)에 남겨주신 문의사항에 대해서는 영업일에 순차적으로 처리해 드릴 예정입니다.<br><br>
+
+                                    따뜻한 연말 되시길 바라며 새해 복 많이 받으세요 :-)<br>
+                                    감사합니다.<br>
+                                    프립 고객센터 드림
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notice_item" data-category="notice">
+                            <div class="notice_header">
+                                <span class="badge notice">공지</span>
+                                <strong class="title">추석 명절 및 연휴 고객센터 휴무 안내</strong>
+                                <span class="date">25-09-23 10:26</span>
+                                <i class="arrow_icon"></i>
+                            </div>
+                            <div class="notice_content">
+                                <div class="content_inner">
+                                    안녕하세요. 크루님<br>
+                                    프립입니다. :-)<br><br>
+
+                                    풍성한 한가위 보내시길 바라겠습니다<br><br>
+
+                                    프립은 크루님의 건강한 여가 생활을 위해 <br>
+                                    앞으로도 더 노력하겠습니다.<br><br>
+
+                                    <strong>[ 고객센터 휴무 안내 ]</strong><br>
+                                    10월 3일(금) ~ 10월 8일(수) | 추석 명절 및 연휴<br>
+                                    ※ 연휴 기간 중 10월 9일(목)에는 정상 운영됩니다.<br><br>
+
+                                    연휴 동안 진행하는 프립에 대해서는 해당 상품의 호스트님과 <br>
+                                    소통하실 수 있으며,<br>
+                                    프립 카카오톡 채널(@프립)에 남겨주신 문의사항은<br>
+                                    9일부터 순차적으로 처리될 예정입니다.<br><br>
+
+                                    문의량이 너무 많을 경우 답변까지 시간이 지체될 수 있는 점<br>
+                                    크루님의 너그러운 양해를 부탁드립니다.<br><br>
+
+                                    감사합니다.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notice_item" data-category="notice">
+                            <div class="notice_header">
+                                <span class="badge notice">공지</span>
+                                <strong class="title">광복절(8/15) 고객센터 휴무 안내</strong>
+                                <span class="date">25-09-11 21:51</span>
+                                <i class="arrow_icon"></i>
+                            </div>
+                            <div class="notice_content">
+                                <div class="content_inner">
+                                    안녕하세요. 크루님<br>
+                                    프립입니다. :-)<br><br>
+
+                                    8월 15일 광복절 휴무 안내드립니다.<br>
+
+                                    <strong>[ 고객센터 휴무 안내 ]</strong><br>
+                                    8/15(금) : 광복절 휴무<br><br>
+
+                                    주말 및 휴무 동안 진행하는 프립에 대해서는 해당 상품의 호스트님과 소통하실 수 있으며,<br>
+                                    프립(카카오톡 채널 @프립)에 남겨주신 문의사항에 대해서는 18일부터 순차적으로 처리될 예정입니다만<br>
+                                    문의량이 너무 많을 경우 답변까지 시간이 지체될 수 있는 점 너그러운 양해를 부탁드립니다.<br>
+                                    최대한 빠르게 답변 드릴 수 있도록 노력하겠습니다.<br><br>
+
+                                    감사합니다.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notice_item" data-category="notice">
+                            <div class="notice_header">
+                                <span class="badge notice">공지</span>
+                                <strong class="title">직거래 신고 센터 안내</strong>
+                                <span class="date">25-07-03 20:04</span>
+                                <i class="arrow_icon"></i>
+                            </div>
+                            <div class="notice_content">
+                                <div class="content_inner">
+                                    안녕하세요. 크루님<br>
+                                    프립입니다. :-)<br><br>
+
+                                    최근 크루님들께 직거래 및 타 플랫폼 결제를 유도하는 호스트님들의 사례가 접수되고 있습니다.<br><br>
+                                    
+                                    프립은 크루님들께서 이로 인한 불편함을 느끼시지 않도록 직거래 유도를 금지하고 있으며,<br>
+                                    강력한 조치를 취하기 위해 &lt;직거래 신고 센터&gt;를 운영하고 있습니다.<br><br>
+
+                                    언제든지 직거래 관련 불편한 경험을 하셨다면 카카오톡 채널 &lt;프립&gt;으로 제보해 주시기 바랍니다 :-)<br><br>
+
+                                    <strong>[ 직거래 신고 센터 이용 방법 ]<br>
+                                    1. 카카오톡 채널 @프립 접속<br>
+                                    2. 채널홈 메뉴 중 우측 하단 "불만 신고" 클릭<br>
+                                    3. "직거래 유도를 신고해요" 클릭</strong><br><br>
+
+                                    <img src="images/notice_notice1.jpg" alt=""><br>
+
+                                    ※ 호스트 이용약관<br>
+                                    제11조 (호스트의 금지행위) 3. 회원간 직거래 금지 등<br>
+                                    회사 시스템이나 서비스를 경유하지 않고 직접 거래할 목적으로 회원 간에 개인정보, 연락처 등<br>(계좌번호, 전화번호, 이메일, 메신저, SNS ID 등을 포함하되 이에 한정되지 아니함)를 교환하거나,<br> 호스트의 액티비티 등 소개페이지, 게시판, 후기, 이미지/영상, 리뷰, 문의란 등에 위 개인정보, 연락처 등을 기재하거나 기재하도록 유도하는 행위<br><br>
+
+                                    프립은 크루님들께서 좋은 경험만 누리실 수 있도록 노력하겠습니다 :-)<br>
+                                    감사합니다.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notice_item" data-category="notice">
+                            <div class="notice_header">
+                                <span class="badge notice">공지</span>
+                                <strong class="title">5월 연휴 고객센터 휴무 안내</strong>
+                                <span class="date">25-04-29 16:34</span>
+                                <i class="arrow_icon"></i>
+                            </div>
+                            <div class="notice_content">
+                                <div class="content_inner">
+                                    안녕하세요. 크루님<br>
+                                    프립입니다 :-)<br><br>
+
+                                    5월 연휴로 인한 고객센터 휴무 안내드립니다.<br><br>
+
+                                    <strong>[ 고객센터 휴무 안내 ]</strong><br>
+                                    - 5/1(목) : 근로자의 날<br>
+                                    - 5/2(금) 오전 : 내부 사정으로 인한 고객 센터 휴무<br>
+                                    - 5/5(월) ~5/6(화) : 연휴<br>
+                                    *5월 2일(금)에는 내부 사정으로 13시~17시에 고객 센터를 운영합니다.<br><br>
+
+                                    주말 및 휴무 동안 진행하는 프립에 대해서는 해당 상품의 호스트님과 소통하실 수 있으며,<br>
+                                    프립(카카오톡 채널 @프립)에 남겨주신 문의사항에 대해서는 영업일에 순차적으로 처리해 드릴 예정입니다.<br><br>
+
+                                    감사합니다.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notice_item" data-category="notice">
+                            <div class="notice_header">
+                                <span class="badge notice">공지</span>
+                                <strong class="title">삼일절 대체 휴무일(3/4) 고객센터 휴무 안내</strong>
+                                <span class="date">25-02-26 18:28</span>
+                                <i class="arrow_icon"></i>
+                            </div>
+                            <div class="notice_content">
+                                <div class="content_inner">
+                                    안녕하세요. 크루님<br>
+                                    프립입니다.<br><br>
+
+                                    3월 4일 삼일절의 대체 휴무로 인한 고객센터 휴무 안내드립니다.<br><br>
+
+                                    <strong>[ 고객센터 휴무 안내 ]</strong><br>
+                                    - 3/3(월) : 대체 공휴일<br><br>
+
+                                    주말 및 휴무 동안 진행하는 프립에 대해서는 해당 상품의 호스트님과 소통하실 수 있으며,<br>
+                                    프립(카카오톡 채널 @프립)에 남겨주신 문의사항에 대해서는 영업일에 순차적으로 처리해 드릴 예정입니다.<br><br>
+
+                                    감사합니다.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notice_item" data-category="notice">
+                            <div class="notice_header">
+                                <span class="badge notice">공지</span>
+                                <strong class="title">위치기반서비스 폐업 안내</strong>
+                                <span class="date">25-02-26 18:27</span>
+                                <i class="arrow_icon"></i>
+                            </div>
+                            <div class="notice_content">
+                                <div class="content_inner">
+                                    안녕하세요. 크루님 :)<br>
+                                    프립입니다.<br><br>
+
+                                    위치기반 서비스 폐업과 관련한 안내 드립니다. <br><br>
+
+                                    <strong>[ 위치기반 서비스 폐업 사유 ]</strong><br>
+                                    - 위치기반 서비스를 이용해 제공하던 내주변 프립 기능이 이미 2023년 9월 26일 중단하였고<br>
+                                    더이상 위치기반 서비스를 사용하지 않아 폐업을 진행합니다.<br><br>
+
+                                    <strong>[ 위치기반 정보 폐기 관련 ]<br>
+                                    - 내주변 프립 기능은 이미 서비스를 종료하였고 <span class="point">위치 정보는 서버, 데이터베이스 등 어느곳에도 저장하지 않았습니다.</span><br>
+                                    - 위치 정보는 단순히 서버쪽에 전달하여 해당 위치 주변의 프립을 검색하는 용도로만 사용하였으므로 데이터는 저장되지 않았습니다.</strong><br><br>
+
+                                    관련하여 궁금한 점이 있으시다면 카카오톡 채널 [프립]으로 문의해 주시기 바랍니다.<br>
+                                    프립은 앞으로도 보다 나은 서비스를 제공하기 위하여 더 많이 고민하고 발전해 나가도록 하겠습니다.🙇‍♀️<br><br>
+
+                                    감사합니다.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notice_item" data-category="notice">
+                            <div class="notice_header">
+                                <span class="badge notice">공지</span>
+                                <strong class="title">설 연휴 기간 (1/27~1/30) 고객센터 휴무 안내</strong>
+                                <span class="date">25-01-17 17:10</span>
+                                <i class="arrow_icon"></i>
+                            </div>
+                            <div class="notice_content">
+                                <div class="content_inner">
+                                    안녕하세요. 크루님<br>
+                                    프립입니다.<br><br>
+
+                                    2025년 을사년 새해 복 많이 받으세요😊<br>
+                                    프립과 함께 탐험해주신 크루님께 진심으로 감사드리며,<br>
+                                    설 연휴로 인한 고객센터 휴무 안내드립니다.<br><br>
+
+                                    <strong>[ 고객센터 휴무 안내 ]</strong><br>
+                                    - 1/27(월) : 임시공휴일<br>
+                                    - 1/28(화) ~1/30(목) : 설날 연휴 <br><br>
+
+                                    주말 및 휴무 동안 진행하는 프립에 대해서는 해당 상품의 호스트님과 소통하실 수 있으며,<br>
+                                    프립(카카오톡 채널 @프립)에 남겨주신 문의사항에 대해서는 영업일에 순차적으로 처리해 드릴 예정입니다.<br><br>
+
+                                    감사합니다.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notice_item" data-category="notice">
+                            <div class="notice_header">
+                                <span class="badge notice">공지</span>
+                                <strong class="title">신정(1/1) 고객센터 휴무 안내</strong>
+                                <span class="date">24-12-17 16:52</span>
+                                <i class="arrow_icon"></i>
+                            </div>
+                            <div class="notice_content">
+                                <div class="content_inner">
+                                    안녕하세요. 크루님<br>
+                                    프립입니다.<br>
+                                    신정으로 인한 고객센터 휴무 안내드립니다.<br><br>
+
+                                    <strong>[ 고객센터 휴무 안내 ]</strong><br>
+                                    - 1/1(수) : 신정<br><br>
+
+                                    주말 및 휴무 동안 진행하는 프립에 대해서는 해당 상품의 호스트님과 소통하실 수 있으며,<br>
+                                    프립(카카오톡 채널 @프립)에 남겨주신 문의사항에 대해서는 영업일에 순차적으로 처리해 드릴 예정입니다.<br><br>
+
+                                    즐겁고 따뜻한 연말 보내세요 😊<br>
+                                    감사합니다.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notice_item" data-category="event">
+                            <div class="notice_header">
+                                <span class="badge event">이벤트</span>
+                                <strong class="title">[EVENT] 영화 1승 예매권 무료 증정 이벤트 당첨자 발표</strong>
+                                <span class="date">24-11-25 17:18</span>
+                                <i class="arrow_icon"></i>
+                            </div>
+                            <div class="notice_content">
+                                <div class="content_inner">
+                                    안녕하세요, 프립입니다.<br>
+                                    영화 &lt;1승&gt; 초대권 당첨자를 발표합니다!<br><br>
+
+                                    이벤트에 참여해 주신 모든 크루님께 감사 인사드립니다.<br>
+                                    앞으로도 프립은 더 다양하고 즐거운 경험으로 크루님의 일상을 채워드리도록 노력하겠습니다.<br><br>
+
+                                    <img src="images/notice_event1.jpg" alt="영화 1승 예매권 무료 증정 이벤트 당첨자 명단"><br>
+
+                                    - 티켓 안내 : 프립 가입시 등록한 전화번호로 티켓 관련 안내 전달 예정입니다.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notice_item" data-category="notice">
+                            <div class="notice_header">
+                                <span class="badge notice">공지</span>
+                                <strong class="title">10월 고객센터 운영 일정 안내</strong>
+                                <span class="date">24-09-24 15:16</span>
+                                <i class="arrow_icon"></i>
+                            </div>
+                            <div class="notice_content">
+                                <div class="content_inner">
+                                    안녕하세요. 크루님<br>
+                                    프립입니다.<br>
+                                    10월 고객센터 운영 일정이 일부 변동되어 안내드립니다.<br><br>
+
+                                    <strong>[ 고객센터 정상 운영 안내 ]</strong><br>
+                                    - 10/1(화) : 임시공휴일<br>
+                                    - 카카오톡 채널 운영 시간 : 오전 10시 ~ 오후 5시<br><br>
+
+                                    <strong>[ 고객센터 휴무 안내 ]</strong><br>
+                                    - 10/4(금) : 전사 휴무<br>
+                                    - 10/9(수) : 한글날<br><br>
+
+                                    주말 및 휴무 동안 진행하는 프립에 대해서는 해당 상품의 호스트님과 소통하실 수 있으며,<br>
+                                    프립(카카오톡 채널 @프립)에 남겨주신 문의사항에 대해서는 영업일에 순차적으로 처리해 드릴 예정입니다.<br><br>
+
+                                    즐겁고 따뜻한 연말 보내세요 😊<br>
+                                    감사합니다.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notice_item" data-category="notice">
+                            <div class="notice_header">
+                                <span class="badge notice">공지</span>
+                                <strong class="title">추석 연휴 기간 (9/14~9/18) 고객센터 운영시간 안내</strong>
+                                <span class="date">24-09-13 18:18</span>
+                                <i class="arrow_icon"></i>
+                            </div>
+                            <div class="notice_content">
+                                <div class="content_inner">
+                                    안녕하세요. 크루님<br>
+                                    프립 대표 임수열입니다.<br><br>
+
+                                    풍성한 한가위 보내시길 바라겠습니다.<br>
+                                    프립은 크루님의 건강한 여가 생활을 위해 앞으로 더 노력하겠습니다.<br><br>
+
+                                    이와 더불어 추석 연휴(9/14~9/18) 프립 고객센터 휴무 안내드립니다.<br><br>
+
+                                    <strong>[ 고객센터 휴무 안내 ]</strong><br>
+                                    - 9월 14일(토) ~ 18일(수) | 추석 연휴<br><br>
+
+                                    연휴 동안 진행하는 프립에 대해서는 해당 상품의 호스트님과 소통하실 수 있으며,<br>
+                                    프립(카카오톡 채널 @프립)에 남겨주신 문의사항에 대해서는 영업일에 순차적으로 처리해 드릴 예정입니다.<br><br>
+
+                                    크루님들의 너그러운 양해를 부탁드립니다.<br>
+                                    감사합니다.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notice_item" data-category="notice">
+                            <div class="notice_header">
+                                <span class="badge notice">공지</span>
+                                <strong class="title">주말 고객센터 잠정적 운영 중단 안내 (9/1~)</strong>
+                                <span class="date">24-08-13 17:07</span>
+                                <i class="arrow_icon"></i>
+                            </div>
+                            <div class="notice_content">
+                                <div class="content_inner">
+                                    안녕하세요, 크루님<br>
+                                    프립입니다.<br>
+                                    언제나 프립을 통해 다양한 도전과 경험을 해주시는 크루님께 진심으로 감사드립니다.<br><br>
+
+                                    프립은 주말에도 고객센터를 운영해왔으나,<br>
+                                    주말 문의가 거의 없고 운영 효율화를 통해 크루님께 더 큰 혜택을 드리기 위해<br>
+                                    주말 고객센터 상담 서비스를 장점 중단하게 되었습니다.<br>
+                                    장기적으로 더 나은 서비스와 안정된 지원을 제공하기 위함이오니 크루님의 너른 양해 부탁드립니다.<br><br>
+
+                                    <strong>[ 주말 고객센터 상담 중단일 ]</strong><br>
+                                    - 2024년 9월 1일(일)~<br>
+                                    ※ 주중에는 변동없이 정상적인 상담 서비스가 제공 및 운영됩니다.<br><br>
+
+
+                                    주말에 진행하는 프립에 대해서는 해당 상품의 호스트님과 소통하실 수 있으며,<br>
+                                    프립(카카오톡 채널 @프립)에 남겨주신 문의사항에 대해서는 영업일에 순차적으로 처리해 드릴 예정입니다.<br><br>
+
+                                    주말 상담 재개 시 별도 공지를 통해 안내드리겠습니다.<br>
+                                    감사합니다.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notice_item" data-category="notice">
+                            <div class="notice_header">
+                                <span class="badge notice">공지</span>
+                                <strong class="title">8월 고객센터 단축 운영 및 휴무 안내</strong>
+                                <span class="date">24-08-07 13:36</span>
+                                <i class="arrow_icon"></i>
+                            </div>
+                            <div class="notice_content">
+                                <div class="content_inner">
+                                    안녕하세요, 크루님<br>
+                                    프립입니다.<br><br>
+
+                                    8월 고객센터 운영 일정 및 시간이 일부 변동되어 안내드리니 이용에 참고 부탁드립니다.<br>
+                                    ( ※ 안내드리는 날짜 외에는 정상 운영됩니다.)<br><br>
+
+                                    <strong>[ 고객센터 휴무 안내 ]</strong><br>
+                                    - 8월 14일(수)<br>
+                                    - 8월 24일~25일(토,일)<br><br>
+
+                                    <strong>[ 고객센터 단축 운영 안내 ]</strong><br>
+                                    - 8월 15일(목) : 광복절<br>
+                                    - 카카오톡 채널 운영 시간 : 오전 10:00 ~ 오후 1:00<br><br>
+
+
+                                    주말/공휴일/휴무일에는 취소 및 결제 관련 일부 문의에 대한 처리가 제한될 수 있는 점 양해 부탁드리며,<br>
+                                    문의사항에 대해서는 영업일에 순차적으로 처리해드릴 예정입니다.<br><br>
+
+                                    감사합니다.<br>
+                                    프립 고객센터 드림
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notice_item" data-category="event">
+                            <div class="notice_header">
+                                <span class="badge event">이벤트</span>
+                                <strong class="title">[EVENT] 올댓트래블 럭키드로우 이벤트 당첨자 발표</strong>
+                                <span class="date">24-07-04 16:57</span>
+                                <i class="arrow_icon"></i>
+                            </div>
+                            <div class="notice_content">
+                                <div class="content_inner">
+                                    안녕하세요, 프립입니다.<br><br>
+
+                                    <strong>2024 올댓트래블 럭키드로우 경품</strong> 당첨자를 발표합니다!<br>
+                                    다시 한 번 축하드리며, 올댓트래블 이벤트에 참여해주신 모든 크루분들께 감사 인사드립니다.<br><br>
+
+                                    <strong>[당첨 리스트]</strong><br>
+
+                                    <img src="images/notice_event2.jpg" alt="올댓트래블 럭키드로우 이벤트 당첨자 명단">
+
+                                    <small>*경품은 7월 말 ~ 8월초 개별 연락 후 발송 예정입니다.</small><br><br>
+
+                                    앞으로도 여행에 관심이 많은 크루님들은 올댓트래블 인스타그램을 팔로우하시면<br>
+                                    이벤트 및 정보를 실시간 받아 보실 수 있습니다.<br><br>
+
+                                    그럼 크루님들 오늘도 좋은 하루 되세요 😉
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notice_item" data-category="notice">
+                            <div class="notice_header">
+                                <span class="badge notice">공지</span>
+                                <strong class="title">시스템 점검으로 인한 서비스 일시 중단 안내 (6월 27일, 오전 00:00 ~ 오전 03:00)</strong>
+                                <span class="date">24-06-18 16:39</span>
+                                <i class="arrow_icon"></i>
+                            </div>
+                            <div class="notice_content">
+                                <div class="content_inner">
+                                    안녕하세요, 크루님<br>
+                                    프립입니다.<br><br>
+
+                                    보다 안정적으로 프립 서비스를 제공하기 위해 아래와 같이 시스템 점검을 진행할 예정입니다.<br>
+                                    점검 시간 동안 프립 앱/웹 서비스 이용이 불가하므로<br>
+                                    결제, 결제 내역 확인, 결제 취소 등 서비스 사용이 필요한 경우 이전에 미리 이용해 주시기 바랍니다.<br><br>
+
+                                    <strong>- 점검 대상 서비스 : 프립 앱/웹 페이지, 호스트 관리 페이지<br>
+                                    - 점검 기간 : 2024년 6월 27일(목) 00:00 ~ 03:00 까지</strong><br>
+                                    ( ※ 위 기간은 예상 기간으로 상황에 따라 연장될 수 있으며, 연장될 경우 재공지를 통해 안내드리도록 하겠습니다. )<br><br>
+
+                                    크루님께서 보다 편리하게 프립을 이용하실 수 있도록 최선을 다하겠습니다.<br><br>
+
+
+                                    감사합니다.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notice_item" data-category="notice">
+                            <div class="notice_header">
+                                <span class="badge notice">공지</span>
+                                <strong class="title">현충일(6/6) 고객센터 운영시간 안내</strong>
+                                <span class="date">24-05-29 13:34</span>
+                                <i class="arrow_icon"></i>
+                            </div>
+                            <div class="notice_content">
+                                <div class="content_inner">
+                                    안녕하세요, 크루님<br>
+                                    프립입니다.<br><br>
+
+                                    6월 6일 현충일로 인한 고객센터 운영 시간이 일부 단축되어 안내드립니다.<br><br>
+
+                                    <strong>[ 프립 고객센터 운영 시간 안내 ]<br>
+                                    - 일자 : 6월 6일(목) 단축 운영<br>
+                                    -<span class="point"> 카카오톡 채널 운영 시간 : 오전 10:00 ~ 오후 1:00</span></strong><br><br>
+
+                                    주말, 공휴일에는 취소 및 결제 관련 일부 문의에 대한 처리가 제한될 수 있는 점 양해 부탁드리며,<br>
+                                    문의사항에 대해서는 영업일에 순차적으로 처리해드릴 예정입니다.<br><br>
+
+                                    감사합니다.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notice_item" data-category="event">
+                            <div class="notice_header">
+                                <span class="badge event">이벤트</span>
+                                <strong class="title">[EVENT] 성심당 팝업 &lt;로컬 크리에이티브 2024&gt; 무료 응모 이벤트 당첨자를 발표</strong>
+                                <span class="date">24-05-23 14:16</span>
+                                <i class="arrow_icon"></i>
+                            </div>
+                            <div class="notice_content">
+                                <div class="content_inner">
+                                    안녕하세요, 프립입니다.<br>
+                                    <strong>성심당 팝업 &lt;로컬 크리에이티브 2024&gt; 무료 응모 이벤트</strong> 당첨자를 발표합니다!<br><br>
+
+                                    이벤트에 참여해 주신 모든 크루님께 감사 인사드립니다.<br>
+                                    입장 티켓은 개별 연락으로 발송 드릴 예정이며 1인 2매 증정됩니다.<br><br>
+
+                                    앞으로도 프립은 더 다양하고 즐거운 경험으로 크루님의 일상을 채워드리도록 노력하겠습니다.<br><br>
+
+                                    <img src="images/notice_event3.jpg" alt="성심당 팝업 무료 응모 이벤트 당첨자 명단"><br>
+
+                                    <strong>[전시 정보]</strong><br>
+                                    전시 기간 : 5/17(금) ~ 6/2(일)<br>
+                                    운영 시간 : 오전 11시 ~ 오후 7시 (입장 및 매표 마감 : 오후 6시)<br>
+                                    휴관일 : 매주 월요일<br>
+                                    전시 문의 : 070-8896-5653<br>
+                                    전시 장소 : 문화역서울284 (서울 중구 통일로 1)<br>
+                                    티켓 안내 : 앱 공지 이후 핸드폰 번호로 모바일 티켓 발송 (*당첨자 본인 필히 참석)
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notice_item" data-category="event">
+                            <div class="notice_header">
+                                <span class="badge event">이벤트</span>
+                                <strong class="title">[EVENT] 영화 &lt;청춘18X2 너에게로 이어지는 길&gt; 무료 시사회 초대 이벤트 당첨자 발표</strong>
+                                <span class="date">24-05-23 14:16</span>
+                                <i class="arrow_icon"></i>
+                            </div>
+                            <div class="notice_content">
+                                <div class="content_inner">
+                                    안녕하세요, 프립입니다.<br><br>
+
+                                    <strong>영화 &lt;청춘18X2 너에게로 이어지는 길&gt; 무료 시사회 초대 이벤트</strong> 당첨자를 발표합니다!<br>
+                                    이벤트에 참여해 주신 모든 크루님께 감사 인사드립니다.<br>
+                                    앞으로도 프립은 더 다양하고 즐거운 경험으로 크루님의 일상을 채워드리도록 노력하겠습니다.<br><br>
+
+                                    <strong>[당첨자]</strong>
+                                    <img src="images/notice_event4.jpg" alt="영화 '청춘18*2 너에게로 이어지는 길'무료 시사회 초대 이벤트 당첨자 명단"><br>
+
+                                    <strong>[시사 정보]</strong><br>
+                                    - 시사 일정 : 5/13(월) 20시<br>
+                                    - 시사 장소 : 롯데시네마 월드타워<br>
+                                    - 티켓 수령 안내 : 프립 가입시 등록한 전화번호로 티켓 관련 안내 전달 예정입니다.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pagination">
+                    <a href="#none" class="first_page disabled">&lt;&lt;</a>
+                    <a href="#none" class="prev_page disabled">&lt;</a>
+
+                    <div class="page_numbers">
+                        <a href="#none" class="page_num active">1</a>
+                        <a href="#none" class="page_num">2</a>
+                        <a href="#none" class="page_num">3</a>
+                        <a href="#none" class="page_num">4</a>
+                        <a href="#none" class="page_num">5</a>
+                        <a href="#none" class="page_num">6</a>
+                        <a href="#none" class="page_num">7</a>
+                        <a href="#none" class="page_num">8</a>
+                        <a href="#none" class="page_num">9</a>
+                        <a href="#none" class="page_num">10</a>
+                    </div>
+
+                    <a href="#none" class="next_page">&gt;&gt;</a>
+                    <a href="#none" class="last_page">&gt;</a>
+                </div>
+            </section>
+        </main>
+
+        <div class="footer_wrap">
+            <footer id="footer" class="footer">
+                <h2 class="f_logo">Frientrip</h2> <!--(주) 프렌트립 하단로고-->
+                <h3 class="hide">고객 지원</h3>
+                <div class="supt">
+                    <a href="#none" class="a_click">QnA</a>
+                    <a href="#none" class="a_click">호스트 지원</a>
+                </div>    
+                <h3 class="hide">카카오톡 상담</h3>
+                <div class="kakao">
+                    <div class="kakao_chat">
+                        <a href="#none" class="c_chat"><img src="images/chat_icon.svg" alt="">고객 채팅상담</a>
+                        <a href="#none" class="h_chat"><img src="images/chat_icon.svg" alt="">호스트지원 채팅상담</a>
+                    </div>
+                    <p>운영시간<span class="line"></span>평일 주말 10:00~17:00 (점심 12:00~13:00)</p>
+                </div>
+
+                <div class="f_txt">
+                    <div class="f_txt1">
+                        <p><span class="review_number">주</span>프렌트립<span class="line"></span>대표 임수열<span class="line"></span>개인정보관리책임자 양사열<span class="line"></span>사업자등록번호 261-81-04385<span class="line"></span>통신판매업신고번호 2016-서울성동-01088</p>
+                        <p>주소 서울특별시 성동구 왕십리로 115 헤이그라운드 서울숲점 G704<span class="line"></span>광고 제휴문의 contact@frientrip.com</p>
+                    </div>
+                    <div class="f_txt2">
+                        <p><a href="#none" class="a_click">이용약관</a><span class="line"></span><a href="#none" class="a_click">개인정보 처리방침</a><span class="line"></span><a href="#none" class="a_click">NICEPAY 안전거래 서비스</a></p>
+                        <p><span class="review_number">주</span>프렌트립은 통신판매 중개자로서 거래 당사자가 아니며, 호스트가 등록한 상품정보 및 거래에 대해 <span class="review_number">주</span>프렌트립은 일체의 책임을 지지 않습니다.</p>
+                    </div>
+                </div>
+
+                <h3 class="hide">프립 연결링크</h3>
+                <div class="f_link">
+                    <a href="https://www.instagram.com/frip_korea" class="instagram"><img src="images/instagram.svg" alt="인스타그램"></a>
+                    <a href="https://www.facebook.com/frientrip" class="facebook"><img src="images/facebook.svg" alt="페이스북"></a>
+                    <a href="https://www.youtube.com/channel/UCgYVh2nh8nfC0wHEdkWLLZg?view_as=subscriber" class="youtube"><img src="images/youtube.svg" alt="유튜브"></a>
+                    <span class="f_line"></span>
+                    <a href="https://apps.apple.com/kr/app/%ED%94%84%EB%A6%BD-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-1%EB%93%B1-%EC%B7%A8%EB%AF%B8%EC%97%AC%EA%B0%80-%ED%83%90%EC%83%89-%ED%94%8C%EB%9E%AB%ED%8F%BC/id1066782203"><img src="images/down_apple.svg" alt="IOS 다운"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.frientrip.frip"><img src="images/down_google.svg" alt="안드로이드 다운"></a>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
