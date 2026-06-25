@@ -72,6 +72,16 @@ $(() => {
         }, 600);
     });
 
+    $('.ready_no').on('click', function(e) {
+        e.preventDefault();
+        alert("본 페이지는 미생성 페이지입니다.\n메인 화면과 구현된 페이지 위주로 감상해 주세요! 감사합니다.");
+    });
+
+    $('a[href="#"], a[href="#none"]').on('click', function(e) {
+        e.preventDefault();
+        alert("준비 중인 기능입니다.");
+    });
+
     gnb();
     loginCheck();
     mypageCheck();
