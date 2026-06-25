@@ -1,0 +1,355 @@
+.serv_main {
+    width: 1600px; height: 640px;
+    margin: 0 auto 100px;
+    position: relative;
+    font-family: var(--font_neo);
+}
+.serv_bg {
+    width: 100%; height: 100%;
+    margin: auto;
+    border-radius: 16px;
+    color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.bgt_wrap {
+    transform: translateY(-40px)
+}
+.bg_title {
+    width: fit-content; height: 25px;
+    padding: 0 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    border-radius: 50px;
+    margin: 0 auto 16px;
+}
+.bg_text {
+    font-size: 26px;
+    letter-spacing: 0.03em;
+}
+.serv_desc > ul {
+    width: fit-content;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 25px
+}
+.serv_desc > ul > li {
+    width: 260px; height: 50px;
+    position: relative
+}
+.serv_desc button {
+    width: 100%; height: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    display: flex;
+    position: absolute;
+    bottom: 0; left: 0;
+    padding-left: 24px;
+    transition: hover 0.3s, background 0.3s;
+}
+.serv_desc button.active {
+    background: rgba(255, 255, 255, 0.7)
+}
+.serv_desc button:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+.serv_desc button > span {
+    color: var(--serve-n-color);
+    font-size: var(--text_size20);
+    position: absolute;
+    bottom: 12px
+}
+.serv_desc button > img {
+    width: 16px; height: 8px;
+    position: absolute;
+    right: 25px; bottom: 20px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+.serv_desc button.active > img {
+    transform: rotate(180deg);
+}
+.serv_desc button:focus-visible {
+    outline: 2px solid #333;
+    outline-offset: 3px;
+}
+.desc_cont {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+}
+.desc_cont ul {
+    height: fit-content;
+    padding: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.top10 {
+    width: 1260px;
+    margin: 0 auto 112px;
+    position: relative
+}
+.top10 h2 {
+    font-family: var(--font_neo);
+    font-size: var(--text_size22);
+    font-weight: 600;
+    margin-bottom: 40px
+}
+
+.top_view {
+    width: 1260px; height: max-content;
+    margin-top: -15px;
+    margin-left: -10px;
+    padding-top: 15px; 
+    padding-left: 10px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.top_cont {
+    width: max-content;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    transition: transform .6s cubic-bezier(0.25, 1, 0.5, 1)
+}
+.top_text {
+    width: 400px; height: 506px;
+    position: relative;
+    overflow: hidden
+}
+.top_subtitle {
+    display: block;
+    width: 384px;
+    margin: 36px auto 0;
+    font-size: var(--text_size20);
+    font-weight: 500
+}
+.top_text .locate {
+    position: absolute;
+    top: 366px; left: 12px
+}
+.top_text .review {
+    position: absolute;
+    top: 366px; right: 12px;
+    gap: 6px;
+    display: flex;
+    align-items: center;
+}
+.top_text .star_bg {
+    display: block;
+    width: 20px; height: 20px;
+    background: url(../images/star_before.svg) no-repeat;
+}
+.top_text .star_fill {
+    display: block;
+    width: 20px; height: 20px;
+    background: url(../images/star.svg) no-repeat;
+}
+.top_text .price {
+    position: absolute;
+    right: 12px; bottom: 10px;
+    font-size: var(--text_size22);
+    font-weight: 600
+}
+.top_cont .icon_heart {
+    width: 40px; height: 40px
+}
+.top_cont button {
+    width: 40px; height: 40px;
+    top: 310px; right: 10px
+}
+.top_slider {
+    display: flex;
+    align-items: center;
+    position: relative
+}
+.slider_control {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+.top_page {
+    width: 60px; height: 34px;
+    background: var(--main-n-color);
+    border-radius: 30px;
+    text-align: center;
+    align-content: center;
+}
+.top_current {
+    color: #fff
+}
+.top_total {
+    color: #888
+}
+.progress {
+    width: 100px; height: 5px;
+    background: #d9d9d9;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative
+}
+.progress_fill {
+    width: 12.5%; height: 100%;
+    background: var(--main-n-color);
+    transition: width 0.3s ease;
+    position: absolute;
+    transition: width 0.4s ease-out
+}
+.top_current::after {
+    content: "/";
+    margin-left: 5px
+}
+.top_buttons {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    right: 0; bottom: 0
+}
+.top_buttons > button {
+    width: 40px; height: 40px;
+    border: 1px solid #CFD8E6;
+    box-sizing: border-box;
+    border-radius: 30px;
+    transition: all 0.4s
+}
+.pre_more {
+    background: var(--color-white) url(../images/pre.svg) no-repeat 13px;
+}
+.next_more {
+    background: var(--color-white) url(../images/next.svg) no-repeat 15px;
+}
+.pre_more:hover, .next_more:hover {
+    background-color: #CFD8E6
+}
+
+.frip_wrap {
+    width: 1260px;
+    margin: 0 auto 120px
+}
+.frip_title {
+    margin-bottom: 40px
+}
+.frip_title h2 {
+    font-family: var(--font_neoEB);
+    font-size: 28px;
+    margin-bottom: 20px
+}
+.frip_title > ul {
+    font-family: var(--font_neo);
+    display: flex;
+    gap: 35px
+}
+.frip_title > ul button {
+    font-size: var(--text_size20);
+    font-weight: 500;
+    transition: all 0.4s;
+    background: none
+}
+.frip_title button.active {
+    color: #8A3FFC
+}
+
+.frip_cont {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 100px;
+    max-width: 1260px;
+    margin: 0 auto 100px;
+}
+.frip_text {
+    width: 304px; height: 380px;
+    position: relative
+}
+.frip_subtitle {
+    display: block;
+    width: 280px;
+    margin: 32px auto 0;
+    font-size: var(--text_size18);
+    font-weight: 500
+}
+.frip_text .locate {
+    position: absolute;
+    top: 256px; left: 12px
+}
+.frip_text .price {
+    position: absolute;
+    right: 12px; bottom: 10px;
+    font-size: var(--text_size20);
+    font-weight: 600 
+}
+.frip_text .review {
+    position: absolute;
+    top: 256px; right: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px
+}
+.frip_text .star_bg {
+    display: block;
+    width: 20px; height: 20px;
+    background: url(../images/star_before.svg) no-repeat;
+}
+.frip_text .star_fill {
+    display: block;
+    width: 20px; height: 20px;
+    background: url(../images/star.svg) no-repeat;
+}
+.frip_text .sub_t {
+    font-size: var(--text_size14)
+}
+.frip_cont .icon_heart{
+    width: 35px; height: 35px
+}
+.frip_cont button {
+    width: 40px; height: 40px;
+    top: 205px; right: 5px
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 15px;
+    margin: 0 auto 120px
+}
+
+.pagination a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px; height: 32px;
+    transition: all 0.2s;
+}
+
+.pagination .page_numbers {
+    display: flex;
+    gap: 10px;
+}
+
+.pagination a.active {
+    background-color: #E8E6FF;
+    border-radius: 50%;
+    font-weight: bold
+}
+
+.pagination a.disabled {
+    color: #ccc;
+    cursor: default;
+}
+
+.pagination a.page_num:hover:not(.active) {
+    background-color: #F0EFFF;
+    border-radius: 50%;
+}

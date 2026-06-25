@@ -1,0 +1,151 @@
+.inner {
+    max-width: 1260px;
+    margin: 80px auto;
+    padding: 0 20px
+}
+.inner h2 {
+    font-family: var(--font_neo);
+    font-size: var(--text_size22);
+    margin: 100px auto 40px;
+    letter-spacing: 0.02em
+}
+.tab_menu {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 60px
+}
+.tab_menu button {
+    width: 100px; height: 40px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1px solid #ddd; 
+    background: #f5f4f4;
+    color: var(--text_serve);
+    font-weight: 600;
+    box-sizing: border-box;
+}
+.tab_menu button.active {
+    background: var(--main-n-color);
+    color: #fff;
+    border: var(--main-n-color);
+}
+
+.notice_list {
+    border-top: 2px solid var(--main-n-color)
+}
+.notice_item {
+    border-bottom: 1px solid #CFD8E6;
+}
+.notice_header {
+    padding: 25px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+.badge {
+    width: 80px; height: 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    margin-right: 20px;
+    color: #fff
+}
+.badge.notice {
+    background: #6366F1
+}
+.badge.event {
+    background: #FF3B5C
+}
+
+.notice_header .title {
+    flex: 1;
+    font-weight: 500
+}
+.notice_header .date {
+    font-size: 13px;
+    color: var(--text_serve);
+    margin-right: 40px
+}
+
+.arrow_icon {
+    width: 12px; height: 12px;
+    border-right: 2px solid var(--text_serve);
+    border-bottom: 2px solid var(--text_serve);
+    transform: rotate(45deg);
+    transition: 0.3s;
+    margin-top: -6px;
+    display: inline-block;
+    flex-shrink: 0
+}
+.notice_item.open .arrow_icon {
+    transform: rotate(-135deg);
+    margin-top: 4px
+}
+
+.notice_content {
+    display: none;
+    width: 1200px;
+    margin: 0 auto 20px;
+    background: var(--color-white);
+    border-radius: 0 15px 15px 0;
+    border-left: 2px solid #ddd;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.content_inner {
+    padding: 30px 40px;
+    line-height: 1.8;
+    margin: 10px 20px;
+}
+
+.notice_item.open .arrow_icon {
+    transform: rotate(-135deg);
+}
+
+.notice_wrap img {
+    width: 500px; height: 500px;
+    display: block;
+}
+.notice_wrap .point {
+    color: red
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 15px;
+    margin: 0 auto 120px
+}
+
+.pagination a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px; height: 32px;
+    transition: all 0.2s;
+}
+
+.pagination .page_numbers {
+    display: flex;
+    gap: 10px;
+}
+
+.pagination a.active {
+    background-color: #E8E6FF;
+    border-radius: 50%;
+    font-weight: bold
+}
+
+.pagination a.disabled {
+    color: #ccc;
+    cursor: default;
+}
+
+.pagination a.page_num:hover:not(.active) {
+    background-color: #F0EFFF;
+    border-radius: 50%;
+}

@@ -1,0 +1,233 @@
+.main {
+    width: 1260px;
+    margin: auto;
+    padding-bottom: 100px
+}
+.my_profile {
+    margin: 60px auto 40px
+}
+.my_info_card {
+    height: 200px;
+    background: #fff;
+    border-radius: 16px 16px 0 0;
+    justify-content: space-between;
+    padding: 40px 50px; 
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    position: relative;
+    display: flex;
+}
+.profile_group {
+    align-items: center;
+}
+.profile {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.profile_img img {
+    display: block;
+    width: 100px; height: 100px;
+    border-radius: 50px;
+}
+.profile_txt {
+    line-height: 1.8;
+}
+.profile_name {
+    font-size: 30px;
+    font-weight: bold
+}
+.profile_name img {
+    display: inline-block;
+    margin-left: 6px;
+    width: 24px
+}
+.report {
+    font-size: var(--text_size18);
+}
+.logout_btn {
+    width: fit-content; height: 30px;
+    align-items: center;
+    padding: 0 10px;
+    background: #fff;
+    border: 1px solid #E6E6E6;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 5px 0 0 150px;
+}
+.benefit_group {
+    padding-left: 100px;
+    padding-right: 50px;
+    border-left: 1px solid #CFD8E6;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+.benefit_list {
+    display: flex;
+    gap: 50px;
+    align-items: flex-end;
+}
+.benefit_list li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80px
+}
+.benefit_list img {
+    display: block;
+    height: 50px; width: auto;
+    margin-bottom: 12px
+}
+.benefit_list .label {
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 4px;
+    white-space: nowrap
+}
+.benefit_list .val {
+    display: block;
+    font-size: 14px;
+    color: var(--point-color);
+    font-weight: bold;
+    white-space: nowrap;
+}
+.benefit_list .coupon_img  {
+    width: 70px
+}
+
+.host_banner {
+    display: block;
+    width: 1260px; height: 60px;
+    background: var(--main-p-color);
+    text-align: center;
+    align-content: center;
+    border-radius: 0 0 16px 16px;
+    font-size: var(--text_size22);
+    margin-bottom: 100px
+}
+
+.frip_section {
+    margin-bottom: 80px;
+    position: relative
+}
+.frip_section h2 {
+    font-size: var(--text_size20);
+    margin-bottom: 20px;
+}
+.frip_section > a {
+    position: absolute;
+    top: 10px; right: 0
+}
+
+.frip_grid {
+    width: 100%; height: 300px;
+    display: flex;
+    overflow: hidden;
+    gap: 12px;
+}
+.frip_grid li {
+    width: 200px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    transition: transform 0.4s, box-shadow 0.3s;
+}
+.frip_grid li:hover {
+    box-shadow:0 6px 12px rgba(0,0,0,0.08);
+}
+.thumb img {
+    display: block;
+    width: 200px; height: 160px
+}
+.frip_card {
+    padding: 26px 12px 0 12px;
+    position: relative;
+}
+.frip_card dt {
+    font-size: var(--text_size18);
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.loc {
+    color: var(--text_serve);
+    font-size: var(--text_size14);
+    position: absolute;
+    top: 6px
+}
+.btn {
+    width: 176px; height: 30px;
+    align-content: center;
+    text-align: center;
+    font-weight: 600;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+.date_y {
+    border: 1px solid var(--point-color);
+    color: var(--point-color);
+}
+.date_n {
+    border: 1px solid var(--point-color);
+    background-color: var(--point-color);
+    color: #fff;
+}
+.btn a {
+    display: block;
+    width: 100%; height: 100%;
+    align-content: center;
+}
+.date_n:hover {
+    background-color: #D94B5B
+}
+
+.e_saving {
+    width: fit-content;
+    padding: 2px 20px;
+    border-radius: 20px;
+    background: var(--serve-b-color);
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    font-weight: 500;
+    top: 2px; left: 150px
+}
+.e_point {
+    color: var(--point-color);
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 4px;
+}
+.e_point img {
+    display: inline-block;
+    width: 20px; height: 20px;
+    margin-left: 2px;
+}
+
+.history {
+    filter: brightness(0.5)
+}
+.write_y {
+    border: 1px solid var(--main-n-color);
+    color: var(--main-n-color);
+}
+.write_n {
+    border: 1px solid var(--main-n-color);
+    background-color: var(--main-n-color);
+    color: #fff;
+}
+.write_n:hover {
+    background-color: #243546;
+}
+.empty {
+    display: block;
+    width: 100%; height: 300px;
+    text-align: center;
+    align-content: center;
+    font-size: var(--text_size18);
+}

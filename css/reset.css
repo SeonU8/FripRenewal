@@ -1,0 +1,65 @@
+body, h1, h2, h3, div, p, ul, li, dl, dt, dd, button, a, form, figure, fieldset, legend, label, input  {
+    margin: 0; padding: 0
+}
+body {
+    font-family: 'SUIT Variable', 'NanumSquareNeo', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0e1a26;
+    background-color: #f3f6f9
+}
+ul, li {
+    list-style: none
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer
+}
+address {
+    font-style: normal
+}
+.hide {
+    position: absolute;
+    top: -9999px; left: -9999px
+}
+img, button, input, fieldset, select {
+    border: 0 none
+}
+
+:root {
+    --main-n-color: #1C2A3A;
+    --main-p-color: ;
+    --serve-b-color: #DDEAF7;
+    --serve-n-color: #0E1A26;
+    --point-color: #E95A6A;
+    --color-white: #fff;
+    --footer-bg-color: #E2E8F0;
+    --footer-text-color: #4A5568;
+    --footer-serve-color: #7A8596;
+    --text_serve: #606f82;
+    --text_size14: 14px;
+    --text_size16: 16px;
+    --text_size18: 18px;
+    --text_size20: 20px;
+    --text_size22: 22px;
+    --text_size24: 24px;
+    --font_basic: 'suit', sans-serif;
+    --font_neo: 'NanumSquareNeo'
+}
+
+.skip_menu {
+    position: absolute;
+    top: -1px; left: 0;
+    z-index: 100
+}
+.skip_menu a {
+    position: absolute;
+    top: -100px; padding: 5px 10px;
+    white-space: nowrap;
+    background: var(--main-n-color);
+    color: var(--color-white)
+}
+.skip_menu a:focus {
+    top: 0
+}

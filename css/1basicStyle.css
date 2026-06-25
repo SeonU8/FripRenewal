@@ -1,0 +1,195 @@
+/*font*/
+.locate {
+    top: 0
+}
+.sub_t {
+    color: var(--text_serve)
+}
+.sale {
+    color: var(--point-color)
+}
+.before_price {
+    text-decoration: line-through;
+    display: inline-block;
+    margin-right: 10px
+}
+.more {
+    position: absolute;
+    top: 2px; right: 0;
+    font-family: var(--font_neo);
+    font-size: var(--text-size18);
+    font-weight: bold;
+    color: #4A5568
+}
+dt strong {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-break: keep-all;
+}
+.line::after {
+    content: "|";
+    margin: 5px
+}
+.review_number::before {
+    content: "("
+}
+.review_number::after {
+    content: ")"
+}
+.look_text dt {
+    font-family: 'NanumSquare Neo';
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px
+}
+.look_text dd {
+    font-family: 'NanumSquare Neo';
+    font-size: 20px;
+}
+
+
+/*block*/
+.block {
+    background: #fff;
+    border-radius: 12px;
+    position: relative;
+    box-sizing: border-box;
+    transition: transform 0.4s, box-shadow 0.3s;
+}
+.block:hover {
+    box-shadow:0 6px 12px rgba(0,0,0,0.08);
+}
+.block img {
+    display: block;
+    border-radius: 12px 12px 0 0
+}
+.img_container {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    border-radius: 12px 12px 0 0;
+}
+.img_container img {
+    width: 100%; height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.4s;
+    transform-origin: center center;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    will-change: transform;
+}
+.block:hover .img_container img {
+    transform: scale(1.05);
+}
+
+.btn_wish {
+    display: block;
+    background: none;
+    position: absolute;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    z-index: 7;
+}
+.icon_heart {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1.8;
+    transition: all 0.2s ease;
+}
+.btn_wish.on .icon_heart {
+    fill: #ff5a5f;
+    stroke: #ff5a5f;
+}
+
+button{
+    cursor: pointer;
+}
+.button {
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    border: 1px solid rgba(255, 255, 255, 0.05)
+}
+.button:hover {
+    background: rgb(199, 195, 255,0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #1C2A3A
+}
+
+.fripbus_wrap {
+    position: relative;
+}
+.tag_fripbus {
+    display: block;
+    position: absolute;
+    width: 75px; height: 30px;
+    background: #8A6CFF;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    left: -6px; top: -10px;
+    text-align: center;
+    align-content: center;
+    z-index: 7
+}
+.bucketfrip_wrap {
+    position: relative;
+}
+.tag_bucketfrip {
+    display: block;
+    position: absolute;
+    width: 75px; height: 30px;
+    background: #5B4CFF;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    left: -6px; top: -10px;
+    text-align: center;
+    align-content: center;
+    z-index: 7
+}
+.new_wrap {
+    position: relative;
+}
+.tag_new {
+    display: block;
+    position: absolute;
+    width: 45px; height: 30px;
+    background: #FF5C6C;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    left: -6px; top: -10px;
+    text-align: center;
+    align-content: center;
+    z-index: 7
+}
+.beg_wrap {
+    position: relative;
+}
+.tag_beg {
+    display: block;
+    position: absolute;
+    width: 45px; height: 30px;
+    background: #2FC6A2;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    left: -6px; top: -10px;
+    text-align: center;
+    align-content: center;
+    z-index: 7
+}
+
+.wrap {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.beg_wrap, .new_wrap, .fripbus_wrap, .bucketfrip_wrap{
+    display: contents;
+}
