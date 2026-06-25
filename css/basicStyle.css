@@ -497,3 +497,9 @@ footer {
 footer .a_click:hover{
     text-decoration: underline
 }
+
+.ready_no,
+a[href="#none"],
+a[href="#"] {
+    cursor: default !important;
+}
